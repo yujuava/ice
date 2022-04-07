@@ -1,55 +1,118 @@
 body{
-    background-color: #E4FDFC;
+    background-color: #D7F0F3;
+}
+h1{
+    display: none;
+}
+#main_switch{
+    display: none;
 }
 /* ============<<index>>================ */
 header{
-    width: 100%;
+    width: auto;
     display: flex;
-    justify-content: right;
 }
 .content{
-    width: 95%;
     display: flex;
-    position: relative;
     justify-content: space-between;
     align-items: center;
-}
-.content img{
-    width: 20%;
-    height: 100%;
+    background-color: #FAFFFE;
+
 }
 nav{
-    position: absolute;
-    top: 100%;
-    background-color: #E4FDFC;
-    width: 100%;
-    display: none;
-
+    background-color: #FAFFFE;
 }
 .nav_item li{
     display:block;
 }
 .nav_item a{
-    line-height: 44px;
-    font-size: 18px;
     text-decoration: none;
     display: block;
-    color: #92e4f6;
-    font-weight: 900;
+    color: #7DACBA;
+    font-weight: 500;
+    font-family: 'Kaisei Opti', serif;
 }
-.content i{
-    font-size: 28px;
-    color: #8EE9E6;
+/* =============<<phone>>================ */
+@media screen and ( max-width: 768px){
 }
-#main_switch:checked~.content nav{
-    display: block;
+/* =============<<flat_plate>>================ */
+@media screen and ( max-width: 992px){
+    .content img{
+        width: 66px;
+        height: 46px;
+        margin: 0 0 0 18px;
+    }
+    header{
+        justify-content: end;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        border-radius: 26px 0 0 26px;
+        margin-top: 10px;
+        z-index: 100;
+    }
+    nav{
+        position: absolute;
+        padding: 30px 0 20px 25px;
+        z-index: -1;
+        top: 50%;
+        width: 100%;
+        display: none;
+        border-radius: 0 0 0 26px;
+    }
+    .content label{
+        font-size: 20px;
+        color: #7DACBA;
+        margin-right: 20px;
+    }
+    .nav_item li{
+        display: block;
+        border-bottom:0.5px dashed #7DACBA;
+    }
+    .nav_item a{
+        line-height: 44px;
+        font-size: 18px;
+    }
+    #main_switch:checked~.content nav{
+        display: block;
+    }
 }
-@media screen and ( min-width: 768px){
+/* =============<<desktop>>================ */
+@media screen and ( min-width: 992px){
+    header{
+        padding: 20px;
+        justify-content: right;
+        
+    }
+    .content{
+        padding: 0 10px 0 10px;
+        border-radius: 100%;
+    }
+    .content img{
+        width:90px;
+        height: 64px;
+        display: none;
+    }
+    nav{
+        width: 600px;
+        border-radius: 24px;
+        margin: auto;
+    }
     .nav_item{
         display: flex;
+        justify-content: space-around;
     }
     .nav_item li{
         display: inline-block;
+        font-size: 18px;
+        margin: 22px 0 22px 0;
     }
+    .content label{
+        display: none;
+    }
+
     
 }
