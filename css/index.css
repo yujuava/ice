@@ -1,5 +1,6 @@
 body{
     background-color: #D7F0F3;
+    position: relative;
 }
 h1{
     display: none;
@@ -7,17 +8,24 @@ h1{
 #main_switch{
     display: none;
 }
+.content{
+    position: fixed;
+}
+section{
+    width: 100%;
+}
 /* ============<<index>>================ */
 header{
-    width: auto;
+    width: 100%;
     display: flex;
+    /* background-color: aquamarine; */
+    box-sizing: border-box;
 }
 .content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #FAFFFE;
-
 }
 nav{
     background-color: #FAFFFE;
@@ -32,11 +40,17 @@ nav{
     font-weight: 500;
     font-family: 'Kaisei Opti', serif;
 }
+/* ============<<logo_carousel>>=============== */
+.logo_carousel{
+    display: flex;
+    position:absolute;
+    top: 0;
+}
 /* =============<<phone>>================ */
 @media screen and ( max-width: 768px){
 }
 /* =============<<flat_plate>>================ */
-@media screen and ( max-width: 992px){
+@media screen and ( max-width: 767px){
     .content img{
         width: 66px;
         height: 46px;
@@ -44,11 +58,11 @@ nav{
     }
     header{
         justify-content: end;
+        position: relative;
     }
     .content{
         width: 95%;
         display: flex;
-        position: relative;
         justify-content: space-between;
         border-radius: 26px 0 0 26px;
         margin-top: 10px;
@@ -81,15 +95,16 @@ nav{
     }
 }
 /* =============<<desktop>>================ */
-@media screen and ( min-width: 992px){
+@media screen and ( min-width: 768px){
     header{
         padding: 20px;
         justify-content: right;
         
     }
     .content{
-        padding: 0 10px 0 10px;
+        /* padding: 0 10px 0 10px; */
         border-radius: 100%;
+        width: 45%;
     }
     .content img{
         width:90px;
@@ -97,7 +112,7 @@ nav{
         display: none;
     }
     nav{
-        width: 600px;
+        width: 100%;
         border-radius: 24px;
         margin: auto;
     }
@@ -107,12 +122,38 @@ nav{
     }
     .nav_item li{
         display: inline-block;
-        font-size: 18px;
-        margin: 22px 0 22px 0;
+        font-size: 15px;
+        margin: 10px 0 10px 0;
     }
     .content label{
         display: none;
     }
-
-    
+    .logo_carousel{
+        z-index: -1;
+        width: 95%;
+        align-items: center;
+        border-radius:10% 46% 46% 10% / 0% 100% 100% 0%;        ;    
+        overflow: hidden;
+    }
+    .logo_icon{
+        width: 50%;
+        position: relative;
+    }
+    .logo_icon img{
+        display: block;
+        margin: auto;
+        position: absolute;
+        
+    }
+    .carousel_images{
+        overflow: hidden;
+        width: 60%;
+        height: 650px;
+        right: 150px;
+    }
+    .carousel_images img{
+        object-fit: cover;
+        object-position: center;
+        width: 150%;
+    }      
 }
