@@ -74,8 +74,7 @@ nav{
     align-items: center;
     color: #6a929e;
     line-height: 20px;
-    font-family: 'Kaisei Opti', serif;
-    
+    font-family: 'Kaisei Opti', serif; 
 }
 .news img{
     border-radius: 100%;
@@ -90,7 +89,7 @@ nav{
 }
 .contents{
     display: flex;
-    width: 60%;
+    width: 80%;
     position: relative;
 }
 .product_outline{
@@ -124,18 +123,19 @@ nav{
 }
 .product_detail_mark{
     position: absolute;
-    top: 300%;
+    top: 200%;
 }
 .product_detail_mark p{
-    font-size: 23px;
+    font-size: 18px;
     display: inline;
 }
 .product_detail_mark a{
-    margin-top: 40px;
+    font-size: 16px;
+    margin-top: 3vh;
     display: inline-block;
-    width: 33vh;
+    width: 35vh;
     text-align: center;
-    padding: 20px 0 20px 0;
+    padding: 15px 0 15px 0;
     text-decoration: none;
     background-color:#93D1EE;
     border-radius: 10px;
@@ -148,17 +148,58 @@ nav{
     position: relative;
     margin: auto;
     overflow: hidden;
+    z-index: -1;
 }
 .product_outline_img img{
     width: 100%;
     height: 100%;
     position: absolute;
 }
-
-/* =============<<PH-phone>>================ */
-@media screen and ( max-width: 768px){
+/* ================<<NO-ingredients================= */ 
+.ingredients{
+    background-color: #93D1EE;
 }
-/* =============<<FP-flat_plate>>================ */
+.ingredients_detail{
+    padding: 50px 50px 50px 50px;
+    margin: auto;
+    color:  #e6f5f7;;
+}
+.ingredients_detail h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    position: relative;
+}
+.ingredients_detail h2::after{
+    position: absolute;
+    top: 100%;
+    content: '';
+    height: 4px;
+    width: 50%;
+    background-color: rgb(255, 255, 255,0.5);
+    z-index: 100;
+}
+.ingredients_detail p{
+    line-height: 30px;
+}
+.ingredients_detail a{
+    margin-top: 3vh;
+    display: inline-block;
+    width: 33vh;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+    background-color:#79c8ec;
+    border-radius: 10px;
+    color: #e6f5f7;
+}
+
+/* ==================<<PH-phone>>=================== */
+@media screen and ( max-width: 400px){
+    .ingredients{
+        /* margin-top: 25vh; */
+    }
+}
+/* ==============<<FP-flat_plate>>================== */
 @media screen and ( max-width: 767px){
     .content img{
         width: 66px;
@@ -249,6 +290,33 @@ nav{
     .product_outline h2::after{
         width: 30%;
     }
+    /* ==============<<FP-ingredients=============== */
+    .ingredients{
+        display: flex;
+        flex-direction: column;
+    }
+    .ingredients_detail{
+        width: 70%;
+    }
+    .mountain{
+        order: -1;
+        position: relative;
+    }
+    .mountain img{
+        width: 100%;
+        height: 50vh;
+    }
+    /* .dec{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-color:transparent #ff0000  #ff0000 transparent;
+        border-style: solid solid solid solid;
+        border-width: 0px 0px 10vh 60vh;
+
+    } */
 }
 /* =============<<DE-desktop>>================ */
 @media screen and ( min-width: 768px){
@@ -351,11 +419,38 @@ nav{
         width:50vh;
         border-radius: 74% 75% 76% 77% / 62% 59% 63% 62%
         ;
-        box-shadow:0 0 130px 100px inset #74a6cf33;
+        box-shadow:0 0 60px 50px inset #74a6cf33;
         position: absolute;
         top: 15%;
         right: 12%;
         z-index: -1;
     }
-
+    /* ==============<<DE-ingredients=============== */
+    .ingredients{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .ingredients_detail{
+        width: 30vh;
+        z-index: 1;
+    }
+    .mountain{
+        position: relative;
+        z-index: 0;
+    }
+    .mountain img{
+        width: 120%;
+        height: 70vh;
+    }
+    .dec{
+        position: absolute;
+        top:0;
+        left: -15vh;
+        width: 20vh;
+        height: 70vh;
+        border-top:70.1vh solid #93D1EE;
+        border-right:15vh solid #00000000;
+        /* background-color: black; */
+    }
 }
