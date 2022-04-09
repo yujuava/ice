@@ -1,4 +1,6 @@
 body{
+    /* background-color: #B5E6EF; */
+    /* background-color:#93D1EE ; */
     background-color: #B5E6EF;
     position: relative;
 }
@@ -31,6 +33,7 @@ header{
 }
 nav{
     background-color: #FAFFFE;
+    z-index: 9999;
 }
 .nav_item li{
     display:block;
@@ -99,7 +102,7 @@ nav{
     font-size: 24px;
     color: #e6f5f7;
     line-height: 30px;
-    z-index: 100;
+    z-index: 2;
 }
 .product_outline h2{
     font-size: 40px;
@@ -114,7 +117,7 @@ nav{
     height: 4px;
     width: 90%;
     background-color: rgb(255, 255, 255,0.5);
-    z-index: 100;
+    z-index: 10;
 }
 .product_outline p{
     font-size: 32px;
@@ -140,6 +143,7 @@ nav{
     background-color:#93D1EE;
     border-radius: 10px;
     color: #e6f5f7;
+    z-index: 0;
 }
 .product_outline_img{
     height: 70vh;
@@ -176,7 +180,7 @@ nav{
     height: 4px;
     width: 50%;
     background-color: rgb(255, 255, 255,0.5);
-    z-index: 100;
+    z-index: 0;
 }
 .ingredients_detail p{
     line-height: 30px;
@@ -195,9 +199,7 @@ nav{
 
 /* ==================<<PH-phone>>=================== */
 @media screen and ( max-width: 400px){
-    .ingredients{
-        /* margin-top: 25vh; */
-    }
+
 }
 /* ==============<<FP-flat_plate>>================== */
 @media screen and ( max-width: 767px){
@@ -216,7 +218,7 @@ nav{
         border-radius: 26px 0 0 26px;
         margin-top: 10px;
         z-index: 100;
-        position: absolute;
+        position: fixed;
         right: 0;
     }
     nav{
@@ -279,6 +281,9 @@ nav{
     .news img{
         margin: 0px 5px 0px 5px;
     }
+    .news a{
+        display: none;
+    }
     /* ========<<FP-roduct_outline_comments>>====== */ 
     .contents{
         width: 90%;
@@ -290,6 +295,7 @@ nav{
     .product_outline h2::after{
         width: 30%;
     }
+
     /* ==============<<FP-ingredients=============== */
     .ingredients{
         display: flex;
@@ -329,6 +335,7 @@ nav{
         border-radius: 100%;
         width: 45%;
         margin: 20px 30px 0 0;
+        z-index: 999;
     }
     .content img{
         width:90px;
@@ -406,6 +413,19 @@ nav{
     .news img{
         margin: 0 20px 0 20px;
     }
+    .news a{
+        margin-left: auto;
+        font-size: 16px;
+        width: 20vh;
+        text-align: center;
+        padding: 15px 0 15px 0;
+        text-decoration: none;
+        background-color:#93D1EE;
+        border-radius: 10px;
+        color: #e6f5f7;
+        z-index: 0;
+        margin-right: 10px;
+    }
     /* ========<<DE-product_outline_comments>>====== */ 
     .product_outline_comments{
         position: relative;
@@ -430,14 +450,16 @@ nav{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        z-index: -1;
+        overflow: hidden;
     }
     .ingredients_detail{
-        width: 30vh;
-        z-index: 1;
+        width: 40vh;
+        /* z-index: 1; */
     }
     .mountain{
         position: relative;
-        z-index: 0;
+        /* z-index: 1; */
     }
     .mountain img{
         width: 120%;
@@ -448,8 +470,8 @@ nav{
         top:0;
         left: -15vh;
         width: 20vh;
-        height: 70vh;
-        border-top:70.1vh solid #93D1EE;
+        /* height: 70vh; */
+        border-top:70.2vh solid #93D1EE;
         border-right:15vh solid #00000000;
         /* background-color: black; */
     }
