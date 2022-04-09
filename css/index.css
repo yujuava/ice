@@ -1,5 +1,5 @@
 body{
-    background-color: #D7F0F3;
+    background-color: #B5E6EF;
     position: relative;
 }
 h1{
@@ -14,9 +14,11 @@ h1{
 section{
     width: 100%;
 }
+:root{
+    font-family: 'Kaisei Opti', serif;
+}
 /* ============<<index>>================ */
 header{
-    width: 100%;
     display: flex;
     /* background-color: aquamarine; */
     box-sizing: border-box;
@@ -40,16 +42,123 @@ nav{
     font-weight: 500;
     font-family: 'Kaisei Opti', serif;
 }
-/* ============<<logo_carousel>>=============== */
+/* ============<<NO-logo_carousel>>=============== */
+.carousel{
+    position: relative;
+    background-color:#fbffda33;
+}
 .logo_carousel{
     display: flex;
-    position:absolute;
+    /* position:absolute; */
     top: 0;
+    border-radius:10% 46% 46% 10% / 0% 100% 100% 0%;    
+    overflow: hidden;
 }
-/* =============<<phone>>================ */
+.carousel_images{
+    overflow: hidden;
+    height: 100vh;
+}
+.carousel_images img{
+    object-fit: cover;
+    object-position: center;
+}
+/* ===========<<NO-news_index>>============ */  
+.news{
+    position: absolute;
+    display: flex;
+    bottom: 10%;
+    right: 0;
+    z-index: 99;
+    background-color: #f2f9fa;
+    width: 90%;
+    align-items: center;
+    color: #6a929e;
+    line-height: 20px;
+    font-family: 'Kaisei Opti', serif;
+    
+}
+.news img{
+    border-radius: 100%;
+    width: 10vh;
+    height:10vh;
+}
+/* ==========<<NO-product_outline_comments>>======== */ 
+.product_outline_comments{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+.contents{
+    display: flex;
+    width: 60%;
+    position: relative;
+}
+.product_outline{
+    position: absolute;
+    top: 5%;
+    left: 0%;
+    font-size: 24px;
+    color: #e6f5f7;
+    line-height: 30px;
+    z-index: 100;
+}
+.product_outline h2{
+    font-size: 40px;
+    margin:30px 0 20px 0;
+    font-weight: 500;
+    position: relative;
+}
+.product_outline h2::after{
+    position: absolute;
+    top: 120%;
+    content: '';
+    height: 4px;
+    width: 90%;
+    background-color: rgb(255, 255, 255,0.5);
+    z-index: 100;
+}
+.product_outline p{
+    font-size: 32px;
+    margin:30px 0 40px 0;
+    font-weight: 500;
+}
+.product_detail_mark{
+    position: absolute;
+    top: 300%;
+}
+.product_detail_mark p{
+    font-size: 23px;
+    display: inline;
+}
+.product_detail_mark a{
+    margin-top: 40px;
+    display: inline-block;
+    width: 33vh;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+    background-color:#93D1EE;
+    border-radius: 10px;
+    color: #e6f5f7;
+}
+.product_outline_img{
+    height: 70vh;
+    border-radius: 74% 75% 76% 77% / 62% 59% 63% 62%
+    ;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.product_outline_img img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* =============<<PH-phone>>================ */
 @media screen and ( max-width: 768px){
 }
-/* =============<<flat_plate>>================ */
+/* =============<<FP-flat_plate>>================ */
 @media screen and ( max-width: 767px){
     .content img{
         width: 66px;
@@ -57,7 +166,6 @@ nav{
         margin: 0 0 0 18px;
     }
     header{
-        justify-content: end;
         position: relative;
     }
     .content{
@@ -67,6 +175,8 @@ nav{
         border-radius: 26px 0 0 26px;
         margin-top: 10px;
         z-index: 100;
+        position: absolute;
+        right: 0;
     }
     nav{
         position: absolute;
@@ -93,18 +203,64 @@ nav{
     #main_switch:checked~.content nav{
         display: block;
     }
+    /* ===========<<FP-carousel>>============ */
+    .carousel{
+        height:80vh;
+    }
+    .logo_icon{
+        display: none;
+    }
+    .logo_carousel{
+        width: 100%;
+        display: flex;
+        position:absolute;
+        top: 0;
+        border-radius:0% 48% 48% 0% / 10% 64% 59% 10%  ;    
+        overflow: hidden;
+    }
+    .carousel_images{
+        width: 100%;
+        overflow: hidden;
+        height: 63vh;
+    }
+    .carousel_images img{
+        width: 120%;
+        object-fit: cover;
+        object-position: center;
+    } 
+    /* ===========<<FP-news_index>>============ */ 
+    .news{
+        width: 100%;
+        font-weight: 600;
+        padding: 10px 0 10px 0;
+        font-size: 15px;
+    } 
+    .news img{
+        margin: 0px 5px 0px 5px;
+    }
+    /* ========<<FP-roduct_outline_comments>>====== */ 
+    .contents{
+        width: 90%;
+    }
+    .product_outline_img{
+        width:95%;
+        height: 60vh;
+    }
+    .product_outline h2::after{
+        width: 30%;
+    }
 }
-/* =============<<desktop>>================ */
+/* =============<<DE-desktop>>================ */
 @media screen and ( min-width: 768px){
     header{
-        padding: 20px;
-        justify-content: right;
-        
+        /* padding: 20px; */
+        justify-content: right; 
     }
     .content{
         /* padding: 0 10px 0 10px; */
         border-radius: 100%;
         width: 45%;
+        margin: 20px 30px 0 0;
     }
     .content img{
         width:90px;
@@ -128,32 +284,78 @@ nav{
     .content label{
         display: none;
     }
+    /* =============<<DE-carousel>>============== */
+    .carousel{
+        height: 105vh;
+        z-index: -1;
+        width: 100%;
+        top: 0;
+    }
     .logo_carousel{
+        position: absolute;
+        top:0;
         z-index: -1;
         width: 95%;
+        height: 85%;
         align-items: center;
-        border-radius:10% 46% 46% 10% / 0% 100% 100% 0%;        ;    
+        border-radius:10% 46% 46% 10% / 0% 100% 100% 0%;    
         overflow: hidden;
+        background-color: #e6f5f7;
     }
     .logo_icon{
+        display: flex;
         width: 50%;
+        height: 100vh;
         position: relative;
     }
     .logo_icon img{
         display: block;
+        width: 30vh;
+        height: 25vh;
+        /* position: absolute;
+        top: 35%; */
         margin: auto;
-        position: absolute;
-        
-    }
+        }
     .carousel_images{
         overflow: hidden;
         width: 60%;
-        height: 650px;
+        height: 100vh;
         right: 150px;
     }
     .carousel_images img{
         object-fit: cover;
         object-position: center;
-        width: 150%;
-    }      
+        width: 100%;
+        height: 100%;
+    }  
+    /* ===========<<DE-news_index>>============ */  
+    .news{
+        border-radius:50px 0 0 50px; 
+        font-weight: 400;
+        padding: 20px 0 20px 0 ;
+        font-size: 22px;  
+    }
+    .news img{
+        margin: 0 20px 0 20px;
+    }
+    /* ========<<DE-product_outline_comments>>====== */ 
+    .product_outline_comments{
+        position: relative;
+    }
+    .product_outline_img{
+        width:50vh;
+    }
+    .product_outline_comments::before{
+        content: '';
+        height: 70vh;
+        width:50vh;
+        border-radius: 74% 75% 76% 77% / 62% 59% 63% 62%
+        ;
+        box-shadow:0 0 130px 100px inset #74a6cf33;
+        position: absolute;
+        top: 15%;
+        right: 12%;
+        z-index: -1;
+    }
+
 }
