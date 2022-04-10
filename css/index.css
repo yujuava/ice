@@ -635,7 +635,7 @@ footer{
     }
     .ingredients_detail{
         width: 40vh;
-        /* z-index: 1; */
+        z-index: 2;
     }
     .mountain{
         position: relative;
@@ -650,6 +650,7 @@ footer{
         top:0;
         left: -15vh;
         width: 20vh;
+        z-index: 1;
         /* height: 70vh; */
         border-top:70.2vh solid #93D1EE;
         border-right:15vh solid #00000000;
