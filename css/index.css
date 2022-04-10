@@ -272,7 +272,7 @@ nav{
     position: absolute;
     top: 40%;
     left: 35%;
-    content: '''\A Youtube \A 'attr(href)'\A #ice';
+    content: '''\A Youtube \A ''\A #ice';
     white-space: pre-line;
     text-align: center;
     width: 30%;
@@ -282,7 +282,56 @@ nav{
     border:  thick double #425e66;
     border-radius: 24px;
 }
-
+/* ================<<NO-footer>>================= */
+footer{
+    width: auto;
+    z-index: 99;
+    background-image: url(../pic/footer_img.jpg);
+}
+.container{
+    padding: 3%;
+    margin: auto;
+    display: flex;
+    width: 80%;
+}
+.logo_footer img{
+    display: block;
+}
+.footer_divide{
+    display: flex;
+    margin: auto;
+}
+.footer_divide ul{
+    line-height: 30px;
+    color: #79c8ec99;
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.footer_divide ul:last-child{
+    flex-direction: column;
+}
+.footer_divide li{
+    font-size: 16px;
+    line-height: 30px;
+    display: inline-block;
+}
+.web{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.footer_divide ul:last-child li{
+    font-size: 25px;
+}
+.ru{
+    text-align: center;
+    font-size: 12px;
+    color: #79c8ec99;
+    line-height: 20px;
+}
 
 /* ==================<<PH-phone>>=================== */
 @media screen and ( max-width: 400px){
@@ -426,7 +475,7 @@ nav{
         margin: auto;
         display: inline-block;
     }
-    /* ================<<DE-video>>================= */
+    /* ================<<FP-video>>================= */
     .youtube{
         width: auto;
     }
@@ -437,6 +486,22 @@ nav{
     .youtube::before{
         font-weight: 500;
         padding-bottom: 10px;
+    }
+    /* ================<<FP-footer>>================= */
+    .logo_footer img{
+        width: 40%;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .footer_divide{
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .footer_divide ul{
+        margin: auto;
+        width: 40%;
+        font-size: 20px;
     }
 }
 /* =============<<DE-desktop>>================ */
@@ -623,5 +688,18 @@ nav{
     }
     .youtube::before{
         font-weight: 900;
+    }
+    /* ================<<DE-footer>>================= */
+    .logo_footer img{
+        margin: auto;
+        width: 80%;
+    }
+    .footer_divide{
+        width: 70%;
+    }
+    .footer_divide ul{
+        width: 20%;
+        line-height: 30px;
+        font-size: 18px;
     }
 }
