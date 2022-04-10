@@ -18,6 +18,7 @@ section{
 }
 :root{
     font-family: 'Kaisei Opti', serif;
+    --color_text:#e6f5f7;
 }
 /* ============<<index>>================ */
 header{
@@ -196,6 +197,92 @@ nav{
     border-radius: 10px;
     color: #e6f5f7;
 }
+/* ================<<NO-purchase>>================= */
+.purchase{
+    width: 80%;
+    margin: auto;
+}
+.purchase h2{
+    font-size: 30px;
+    color: var(--color_text);
+    margin: 8% 0 5% 0;
+    position: relative;
+}
+.purchase h2::after{
+    position: absolute;
+    top: 104%;
+    content: '';
+    height: 4px;
+    width: 13%;
+    background-color: rgb(255, 255, 255,0.5);
+    z-index: 10;
+}
+.purchase_process .card p{
+    font-size: 28px;
+    color: #79c8ec;
+    text-align: center;
+}
+.purchase_process .card div{
+    /* width: 15vh; */
+    /* height: 50px; */
+    border-radius: 100%;
+    border: 8px solid #93D1EE;
+    text-align: center;
+    display: flex;
+}
+.purchase_process div>i{
+    color: #79c8ec;
+    font-size: 10vh;
+    display: block;
+    margin: auto;
+}
+.purchase_process>i{
+    font-size: 30px;
+    color: #79c8ec;
+}
+.browse{
+    display: flex;
+    justify-content: center;
+}
+.purchase a{
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    display: inline-block;
+    width: 33vh;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+    background-color:#79c8ec;
+    border-radius: 10px;
+    color: #e6f5f7;
+}
+/* ================<<NO-video>>================= */
+.video{
+    background-color:  #fbffda33;
+}
+.youtube{
+    margin: auto;
+    position: relative;
+}
+#myVideo{
+    display: block;
+    margin: auto;
+}
+.youtube::before{
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    content: '''\A Youtube \A 'attr(href)'\A "ice"';
+    white-space: pre-line;
+    text-align: center;
+    width: 30%;
+    height: 17%;
+    background:#C3EBEBC2;
+    z-index: 99;
+    border:  thick double #425e66;
+    border-radius: 24px;
+}
+
 
 /* ==================<<PH-phone>>=================== */
 @media screen and ( max-width: 400px){
@@ -312,17 +399,45 @@ nav{
         width: 100%;
         height: 50vh;
     }
-    /* .dec{
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 0;
-        height: 0;
-        border-color:transparent #ff0000  #ff0000 transparent;
-        border-style: solid solid solid solid;
-        border-width: 0px 0px 10vh 60vh;
-
-    } */
+    /* ================<<FP-purchase>>================= */
+    .purchase h2::after{
+        width: 50%;
+    }
+    .purchase_process{
+        display: flex;
+        flex-direction: column;
+    }
+    .purchase_process .card{
+        width: 70%;
+        margin: auto;
+    }
+    .purchase_process .card p{
+        margin:15px 0 15px 0;
+    }
+    .purchase_process .card div{
+        margin-top: 20px;
+        padding: 25%;
+        width: auto;
+        /* height: 50px; */
+        text-align: center;
+    }
+    .purchase_process>i{
+        transform: rotate(90deg);
+        margin: auto;
+        display: inline-block;
+    }
+    /* ================<<DE-video>>================= */
+    .youtube{
+        width: auto;
+    }
+    #myVideo{
+        width: 80%;
+        height: 60vh;
+    }
+    .youtube::before{
+        font-weight: 500;
+        padding-bottom: 10px;
+    }
 }
 /* =============<<DE-desktop>>================ */
 @media screen and ( min-width: 768px){
@@ -474,5 +589,39 @@ nav{
         border-top:70.2vh solid #93D1EE;
         border-right:15vh solid #00000000;
         /* background-color: black; */
+    }
+    /* ==============<<DE-purchase>>=============== */
+    .purchase h2::after{
+        width: 13%;
+    }
+    .purchase_process{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .purchase_process .card{
+        width: 25vh;
+    }
+    .purchase_process .card p{
+        margin-top: 25px;
+    }
+    .purchase_process .card div{
+        padding: 17%;
+        width: auto;
+        /* height: 50px; */
+        text-align: center;
+    }
+    /* ================<<DE-video>>================= */
+    .youtube{
+        width: 80%;
+        padding: 2%;
+    }
+    #myVideo{
+        width: 80vh;
+        height: 60vh;
+        border-radius: 15%;
+    }
+    .youtube::before{
+        font-weight: 900;
     }
 }
