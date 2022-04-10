@@ -272,7 +272,7 @@ nav{
     position: absolute;
     top: 40%;
     left: 35%;
-    content: '''\A Youtube \A 'attr(href)'\A "ice"';
+    content: '''\A Youtube \A 'attr(href)'\A #ice';
     white-space: pre-line;
     text-align: center;
     width: 30%;
