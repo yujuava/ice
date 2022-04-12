@@ -273,7 +273,7 @@ nav{
     position: absolute;
     top: 40%;
     left: 35%;
-    content: '''\A Youtube \A ''\A #ice';
+    content: '\A Youtube \A\A #ice';
     white-space: pre-line;
     text-align: center;
     width: 30%;
