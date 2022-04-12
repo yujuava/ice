@@ -2,6 +2,7 @@ body{
     /* background-color: #B5E6EF; */
     /* background-color:#93D1EE ; */
     background-color: #C3EBEB;
+    /* background-color: #C3EBEB; */
     position: relative;
 }
 h1{
@@ -18,7 +19,9 @@ section{
 }
 :root{
     font-family: 'Kaisei Opti', serif;
-    --color_text:#e6f5f7;
+    --color_text:#cad6d7;
+    /* --color_text:#e6f5f7; */
+
 }
 /* ============<<index>>================ */
 header{
@@ -63,13 +66,13 @@ nav{
     opacity: 1;
     animation-name: ice;
     animation-iteration-count:infinite;
-    animation-duration: 4s;
+    animation-duration: 2s;
     transition: ease ;
     animation-direction:alternate; 
 }
 @keyframes ice{
     from{
-        opacity: 0.9;
+        opacity: 0.7;
     }
     to{
         opacity: 0.3;
@@ -82,7 +85,7 @@ nav{
     opacity: 1;
     animation-name: ice2;
     animation-iteration-count:infinite;
-    animation-duration: 4s;
+    animation-duration: 2s;
     transition: ease 1s;
     animation-direction:alternate;    
 }
@@ -91,7 +94,7 @@ nav{
         opacity: 0.3;
     }
     to{
-        opacity: 0.9;
+        opacity: 0.7;
     }
 }
 /* ===============<<NO-type>>=================== */
@@ -203,7 +206,7 @@ footer{
 }
 .footer_divide ul{
     line-height: 30px;
-    color: #79c8ec99;
+    color: #79c8ece5;
     margin: 2%;
     display: flex;
     justify-content: center;
@@ -269,6 +272,11 @@ footer{
 }
 .collect input{
     margin: 10px 3px 10px 0;
+}
+.nt{
+    color: red;
+    font-size: 25px;
+    text-align: left;
 }
 /* ==============<<CP-cellphone>>================== */
 @media screen and ( max-width: 767px){
