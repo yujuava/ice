@@ -25,7 +25,7 @@ section{
 :target::before{
     content: '';
     display: block;
-    height: 70px;
+    height: 100px;
 }
 /* ============<<index>>================ */
 header{
