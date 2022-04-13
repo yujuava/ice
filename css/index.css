@@ -338,6 +338,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    font-family: 'Pacifico', cursive;
 }
 
 .youtube .bnr-title .title {
@@ -346,7 +347,7 @@ nav {
 }
 
 .youtube .bnr-title .ice {
-    font-size: 17px;
+    font-size: 28px;
 }
 
 /* ================<<NO-footer>>================= */
@@ -566,8 +567,9 @@ footer {
         bottom: 0;
         left: 0;
         z-index: 1;
-        border-width: 0 0 250px 250vh;
-        border-color: transparent transparent #37bfff transparent;
+        border: solid;
+        border-width: 0 0 150px 250vh;
+        border-color: transparent transparent #93D1EE transparent;
 
     }
 

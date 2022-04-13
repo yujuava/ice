@@ -253,6 +253,12 @@ footer{
     border-radius: 24px;
     display: flex;
 }
+#close{
+    transition: ease 5s;
+}
+#close:hover{
+    transform: rotate(360deg) scale(0.5);
+}
 .about_collect{
     padding: 20px 20px 0 20px;
     display: flex;
