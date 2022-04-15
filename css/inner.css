@@ -1,5 +1,5 @@
 body{
-    background-image: url(../pic/bck2.jpg);
+    background-image: url(../pic/bck3.jpg);
     position: relative;
 }
 h1{
@@ -36,10 +36,12 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #d5ffff;
+    box-shadow: 0 0 13px 5px inset #ffffffe5;
 }
 
 nav {
     background-color: #d5ffff;
+    box-shadow: 0px 0px 8px 5px inset #ffffff99;
     z-index: 9999;
 }
 
@@ -57,10 +59,25 @@ nav {
 
 /* ============<<NO-product>>================ */
 .roller{
-    /* height: 300px; */
     width: 100%;
     display: flex;
-    overflow: hidden;
+    /* overflow: hidden;
+    height: 50%; */
+    position: relative;
+}
+.roller::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #ffffff00;
+    z-index: 1;
+    margin: auto;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    box-shadow:0 0 40px 88px #eefdff;
 }
 .roller img{
     border-radius: 10px;
@@ -72,7 +89,7 @@ nav {
     opacity: 1;
     animation-name: ice;
     animation-iteration-count:infinite;
-    animation-duration: 2s;
+    animation-duration: 3s;
     transition: ease ;
     animation-direction:alternate; 
 }
@@ -91,7 +108,7 @@ nav {
     opacity: 1;
     animation-name: ice2;
     animation-iteration-count:infinite;
-    animation-duration: 2s;
+    animation-duration: 2.5s;
     transition: ease 1s;
     animation-direction:alternate;    
 }
@@ -333,6 +350,8 @@ footer {
         width: 100%;
         display: none;
         border-radius: 0 0 0 26px;
+        box-shadow: 7px -8px 10px 3px inset #ffffffe5;
+
     }
     .content label{
         font-size: 20px;

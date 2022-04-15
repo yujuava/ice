@@ -5,7 +5,7 @@ body {
     /* background-color: #a9e7f2; */
 
     position: relative;
-    background-image: url(../pic/bck2.jpg);
+    background-image: url(../pic/bck3.jpg);
 }
 
 h1 {
@@ -42,10 +42,12 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #d5ffff;
+    box-shadow: 0 0 13px 5px inset #ffffffe5;
 }
 
 nav {
     background-color: #d5ffff;
+    box-shadow: 0px 0px 8px 5px inset #ffffff99;
     z-index: 9999;
 }
 
@@ -64,7 +66,7 @@ nav {
 /* ============<<NO-logo_carousel>>=============== */
 .carousel {
     position: relative;
-    background-color: #fbffda33;
+    background-color: #ffffff4d;
 }
 
 .logo_carousel {
@@ -92,12 +94,13 @@ nav {
     bottom: 10%;
     right: 0;
     z-index: 99;
-    background-color: #d2faf8;
+    background-color: #d6ffff;
     width: 90%;
     align-items: center;
     color: #6a929e;
     line-height: 20px;
     font-family: 'Kaisei Opti', serif;
+    box-shadow: 0 0 25px 15px inset #ffffffc3;
 }
 
 .news img {
@@ -442,6 +445,7 @@ footer {
         width: 100%;
         display: none;
         border-radius: 0 0 0 26px;
+        box-shadow: 7px -8px 10px 3px inset #ffffffe5;
     }
 
     .content label {
@@ -745,7 +749,7 @@ footer {
         align-items: center;
         border-radius: 10% 46% 46% 10% / 0% 100% 100% 0%;
         overflow: hidden;
-        background-color: #e6f5f7b3;
+        background-color: #e6f5f700;
     }
     .product_detail_mark {
         top: 30vw;
