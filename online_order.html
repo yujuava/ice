@@ -67,33 +67,48 @@
         </div>
     </section>
     <section>
-        <img src="./pic/pumpkin.jpg" alt="">
-        <div class="time_estimate">
-            <span>預計送餐時間</span>
-            <span>即時(20分鐘)</span>
+        <div class="timer">
+            <div class="estimate">
+                <i class="fa-solid fa-motorcycle"></i>
+                <div class="time_estimate">
+                    <span>預計送餐時間</span>
+                    <span>即時(20分鐘)</span>
+                </div>
+            </div>
         </div>
     </section>
     <section>
-        <span>購物車</span>
-        <ul class="shopping_title">
-            <li>商品資訊</li>
-            <li>單件價格</li>
-            <li>數量</li>
-            <li>小計</li>
-            <li></li>
-        </ul>
-        <ul class="item_number">
-            <li>芒果雪花冰</li>
-            <li>NT$55</li>
-            <li><input type="text"></li>
-            <li>小計</li>
-            <li><i class="fa-solid fa-xmark"></i></li>
-        </ul>
-        <ul class="total">
-            <li>總金額</li>
-            <li>NT$55</li>
-        </ul>
-        <a href="">查看付款方式及地址</a>
+        <div class="purchase_detail">
+            <table>
+                <caption>購物車</caption>
+                <tr class="shopping_title">
+                    <th>商品資訊</th>
+                    <th>單件價格</th>
+                    <th>數量</th>
+                    <th>小計</th>
+                    <th>標記</th>
+                </tr>
+                <tr class="item_number">
+                    <td>芒果雪花冰</td>
+                    <td>NT$55</td>
+                    <td><input class="num"type="number"></td>
+                    <td>NT$55</td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                </tr>
+                <tr class="item_number">
+                    <td>芒果雪花冰</td>
+                    <td>NT$55</td>
+                    <td><input class="num" type="text"></td>
+                    <td>NT$55</td>
+                    <td><i class="fa-solid fa-xmark"></i></td>
+                </tr>
+            </table>
+            <div class="total">
+                <span>總金額</span>
+                <span>NT$55</span>
+                <a href="javascript:;">查看付款方式及地址</a>
+            </div>
+        </div>
     </section>
     <footer>
         <div class="container">

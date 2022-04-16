@@ -322,7 +322,247 @@ footer {
 .about_collect{
     padding: 20px;
 }
-/* ==============<<CP-cellphone>>================== */
+/* =====================<<NO-news>>====================== */
+.the_news{
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+}
+.the_news h2{
+    text-align: center;
+}
+.contents_newsdivide{
+    display: flex;
+    flex-direction: column;
+    /* margin: auto; */
+    background-color: hsla(177, 100%, 92%, 0.795);
+    border-radius: 10px;
+}
+.news_items{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    border-bottom:1px dashed #3c6b80;
+    background-color: #fff;
+}
+
+.news_items img{
+    border-radius: 100%;
+
+}
+.rest{
+    background-color: hsla(177, 100%, 92%, 0.795);
+    border-radius: 10px;
+}
+.rest_items{
+    margin: auto;
+    text-align: center;
+    background-color: #fff;
+
+}
+/* =====================<<ig>>====================== */
+.contents_ig{
+    margin: auto;
+    overflow: hidden;
+    background-color: #ffffff;
+}
+.ig_title{
+    display: flex;
+    align-items: center;
+    border-bottom:1px dashed #5a99ad;
+}
+.ig_title img{
+    margin: 0 1vw;
+}
+.ig_title span:last-child{
+    color: #34bfe2;
+}
+.ig_detail{
+    padding: 0px;
+}
+.ig_detail p{
+    width: 80%;
+    margin-left: auto;
+}
+.ig_icon{
+    display: flex;
+    justify-content: right;
+}
+.ig_icon i{
+    -webkit-text-stroke:2px #000000;
+    font-size: 22px;
+    color: #fff;
+}
+/* ========<<NO-ingredients>>======= */
+.ingredients_bck{
+    width: 100%;
+}
+.ingredient_detail h2{
+    text-align: center;
+}
+.ingredient_detail{
+    margin: auto;
+}
+.ingredients_inner{
+    width: 90%;
+    margin: auto;
+}
+.ingredients_items{
+    width: 100%;
+    /* margin: auto; */
+    position: relative;
+}
+.ingredients_items p{
+    background-color: rgba(206, 240, 253, 0.856);
+}
+.ingredients_items:first-child img{
+    width: 30%;
+    border-radius: 10px;
+}
+.ingredients_items:nth-child(2) img{
+    width: 30%;
+    border-radius: 10px;
+    margin-left: auto;
+    display: block;
+}
+.conduct_picture{
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin: 30px auto;
+}
+
+.conduct_picture img:nth-child(1),.conduct_picture img:nth-child(4){
+    width: 60%;
+}
+.conduct_picture img:nth-child(2),.conduct_picture img:nth-child(3){
+    width: 35%;
+}
+/* ==========<<online>>============ */
+.purchase {
+    width: 80%;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.purchase h2 {
+    color: #39aee4;
+    position: relative;
+}
+
+.purchase h2::after {
+    position: absolute;
+    top: 105%;
+    content: '';
+    height: 3px;
+    width: 10%;
+    background-color: #3db7f088;
+    z-index: 10;
+}
+
+.purchase_process .card p {
+    color: #39aee4;
+    text-align: center;
+}
+
+.purchase_process .card div {
+    width: 28vw;
+    height: 28vw;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    opacity: 0.8;
+}
+
+.purchase_process div>i {
+    color: #3db7f0;
+    display: block;
+    margin: auto;
+    opacity: 0.7;
+}
+
+.purchase_process>i {
+    font-size: 30px;
+    color: #79c8ec;
+}
+
+.browse {
+    display: flex;
+    justify-content: center;
+}
+
+.purchase a {
+    font-size: 18px;
+    margin-top: 6vh;
+    margin-bottom: 6vh;
+    display: inline-block;
+    width: 33vh;
+    text-align: center;
+    padding: 20px 0 20px 0;
+    text-decoration: none;
+    background-color: #37bfff;
+    border-radius: 10px;
+    color: #e6f5f7;
+}
+/* =======<<timer>>========== */
+.timer{
+    width: 80%;
+    padding: 20px 0;
+    margin: auto;
+}
+.estimate{
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+}
+/* =======<<purchase_detail>>========== */
+.purchase_detail{
+    width: 80%;
+    margin: auto;
+}
+table{
+    /* border: 1px solid #3c6b80; */
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 30px;
+    align-items: center;
+}
+caption{
+    line-height: 30px;
+}
+tr{
+    border: 1px solid #3c6b80;
+}
+.num{
+    width: 2vw;
+}
+.total{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    justify-content: right;
+    text-align: center;
+}
+.total span{
+    margin: 5px;
+}
+.total a{
+    font-size: 16px;
+    display: inline-block;
+    width: 25vh;
+    text-align: center;
+    padding: 5px 0 5px 0;
+    text-decoration: none;
+    background-color: #37bfff;
+    border-radius: 10px;
+    color: #e6f5f7;
+    margin: auto;
+}
+/* =======<<CE-cellphone>>============ */
 @media screen and ( max-width: 991px){
     .content img{
         width: 66px;
@@ -467,6 +707,133 @@ footer {
         font-size: 20px;
         text-align: left;
     }
+
+/* =====================<<CE-news>>====================== */
+    .the_news{
+        display: block;
+        width: 100%;
+        padding: 20vw 0;
+    }
+    .the_news h2{
+        margin: 15px 0;
+    }
+    .contents_newsdivide{
+        margin: auto;
+        width: 90%;
+        padding: 5vw 3vw;
+    }
+    .news_items{
+        padding: 2.5vw 1vw;
+        box-shadow: 0 0 5px 5px inset  hsla(177, 100%, 92%, 0.795);
+    }
+    .news_items span{
+        margin: 0 2vw;
+        font-size: 13px;
+    }
+    .news_items img{
+        width: 13.5vw;
+        height: 8vw;
+    }
+    .rest{
+        margin-top: 10vw;
+        padding: 5vw 3vw;
+    }
+    .rest_items{
+        margin: 5vw ;
+        box-shadow: 0 0 4px 3px inset  hsla(177, 100%, 92%, 0.795);
+    }
+
+/* =============<<CE-ig>>============= */
+    .contents_ig{
+        display: block;
+        width: 80%;
+    }
+    .contents_ig>img{
+        width: 80%;
+        margin: auto;
+        display: block;
+    }    
+    .ig_title img{
+        margin: 0 1.5vw;
+    }
+    .ig_detail{
+        padding: 5vw;
+    }
+    .ig_detail p{
+        margin-top:3vw;
+    }
+    .ig_icon i{
+        margin-top: 5vw;
+        margin: 2vw;
+    }
+ /* ========<<CE-ingredients>>===== */  
+    .ingredient_detail{
+        width: 80%;
+    } 
+    .ingredient_detail h2{
+        font-size: 16px;
+    } 
+    .ingredients_items{
+        display: flex;
+    }
+    .ingredients_items p{
+        font-size: 11px;
+        padding:2vw;
+        margin: auto;
+    }
+    .conduct_picture img{
+        margin: 2px;
+    }
+   /* ==========<<CE-online>>============ */
+
+    .purchase {
+        width: 70%;
+        padding-top: 3vw;
+    }
+    .purchase h2 {
+        font-size: 24px;
+        margin: 18% 0 5% 0;
+    }
+
+    .purchase h2::after {
+        width: 20%;
+    }
+
+    .purchase_process {
+        display: flex;
+        /* flex-direction: column; */
+    }
+
+    .purchase_process .card {
+        /* width: 60%; */
+        margin: auto;
+    }
+
+    .purchase_process .card p {
+        margin: 15px 0 15px 0;
+        font-size: 10px;
+
+    }
+
+    .purchase_process .card div {
+        margin-top: 20px;
+        width: 10vw;
+        height: 10vw;
+        border: 3px  double #3db7f0C2;
+    }
+
+    .purchase_process>i {
+        /* transform: rotate(90deg); */
+        margin: auto;
+        display: inline-block;
+        font-size: 10px;
+    }
+    .purchase_process div>i {
+        font-size: 5vw;
+    }
+    /* =======<<timer>>========== */
+   /* =======<<CE-purchase_detail>>========== */ 
+    
 }
 /* =============<<FP-desktop>>================ */
 @media screen and ( min-width: 668px){
@@ -635,5 +1002,122 @@ footer {
     .collect input{
         margin: 10px 3px 10px 0;
     }
-    
+/* =====================<<DE-news>>====================== */
+    .the_news{  
+        padding: 10vw 0;
+    }
+    .the_news h2{
+        margin: 10px 0;
+        text-decoration:underline 2px rgb(15, 8, 8);
+        text-underline-offset:0.5em;
+     
+    }
+    .contents_newsdivide{
+        padding: 1vw 1vw;
+    }
+    .news_items{
+        padding: 1vw 1vw;
+        box-shadow: 0 0 10px 10px inset  hsla(177, 100%, 92%, 0.795);
+
+    }
+    .news_items span{
+        margin: 0 1vw;
+    }
+    .news_items img{
+        width: 4vw;
+        height: 4vw;
+    }
+    .rest{
+        padding: 1vw 1vw;
+    }
+    .rest_items{
+        margin: 30px;
+        width: 10vw;
+        box-shadow: 0 0 5px 3px inset  hsla(177, 100%, 92%, 0.795);
+
+    }
+/* ===========<<DE-ig>>=============== */
+    .contents_ig{
+        display: flex;
+        width: 70%;
+    }
+
+    .contents_ig>img{
+        width: 40%;
+    }
+    .ig_title img{
+        margin: 0 1.3vw;
+    }
+    .ig_detail{
+        padding: 3vw;
+    }
+    .ig_detail p{
+        margin-top: 2vw;
+        margin-bottom: 2vw;
+    }
+    .ig_icon i{
+        margin-top: 3vw;
+        margin: 0.5vw;
+    }
+/* ========<<DE-ingredients>>======= */
+    .ingredient_detail{
+        width: 70%;
+    }
+    .ingredient_detail h2{
+        font-size: 24px;
+    }
+
+    .ingredients_items p{
+        position: absolute;
+        display: block;
+        width: 70%;
+        margin: auto;
+        top: 50%;
+        left: 20%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+    .conduct_picture img{
+        margin: 10px;
+    }
+    /* ==========<<DE-online>>============ */
+    .purchase h2 {
+        margin: 8% 0 5% 0;
+        font-size: 32px;
+    }
+    .purchase h2::after {
+        width: 13%;
+    }
+
+    .purchase_process {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .purchase_process .card {
+        width: 25vh;
+    }
+
+    .purchase_process .card p {
+        margin-top: 25px;
+        font-size: 28px;
+
+    }
+
+    .purchase_process .card div {
+        /* padding: 17%; */
+        width: 10vw;
+        height: 10vw;
+        text-align: center;
+        margin: auto;
+        border: 8px  double #3db7f0C2;
+
+    }
+    .purchase_process div>i {
+        font-size: 5vw;
+    }
+    /* =======<<DE-timer>>========== */
+    /* /*  */
+    /* =======<<DE-purchase_detail>>======= */
 } 
