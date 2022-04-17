@@ -562,7 +562,56 @@ tr{
     color: #e6f5f7;
     margin: auto;
 }
+.contents_contact{
+    width: 60%;
+    margin: auto;
+}
+.about_bck{
+    width: 100%;
+}
+.about_pic_bck{
+    margin: auto;
+    background-image: url(../pic/bck_about4.jpg);
+    width: 60%;
+    height: 23vw;
+    background-attachment: fixed;
+    background-position: top;
+    background-size: 65%;
+}
+.about_detail [class*="about_pic"]{
+    width: 40%;
+    height: 40vh;
+    background-attachment: fixed;
+} 
+.about_pic1{
+    margin-left: auto;
+    background-image:url(../pic/bck_about8.jpg);
+    background-position:60% 40%;
+    background-size: contain;
+}
+.about_pic2{
+    margin-right: auto;
+    background-image:url(../pic/bck_about10.jpg) ;
+    background-position: 30% 80%;
+    background-size: contain;
+    
+}
+.about_detail{
+    display: flex;
+    margin: 30px 0;
+    overflow: hidden;
+}
+.about_us{
+    width: 50%;
+    margin: auto;
+}
+.map{
+    width: 50%;
+    margin-left: auto;
+}
 /* =======<<CE-cellphone>>============ */
+/* =============<<about>>=========== */
+
 @media screen and ( max-width: 991px){
     .content img{
         width: 66px;
