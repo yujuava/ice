@@ -362,6 +362,9 @@ footer {
 
 }
 /* =====================<<ig>>====================== */
+.ig_news{
+    margin: 4vw ;
+}
 .contents_ig{
     margin: auto;
     overflow: hidden;
