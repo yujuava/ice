@@ -362,8 +362,22 @@ footer {
 
 }
 /* =====================<<ig>>====================== */
+.news_content{
+    width: 70%;
+    height: 30vw;
+    overflow: hidden;
+    margin: auto;
+    box-shadow:  0px 0px 5px 5px inset #ffffff;
+    z-index: 5;
+    /* display: inline-block; */
+}
+.news_content img{
+    position: relative;
+    width: 100%;
+    z-index: -1;
+}
 .ig_news{
-    margin: 4vw ;
+    margin: 4vw  0;
 }
 .contents_ig{
     margin: auto;
@@ -380,9 +394,6 @@ footer {
 }
 .ig_title span:last-child{
     color: #34bfe2;
-}
-.ig_detail{
-    padding: 0px;
 }
 .ig_detail p{
     width: 80%;
@@ -588,7 +599,7 @@ tr{
 } 
 .about_pic1{
     margin-left: auto;
-    background-image:url(../pic/bck_about8.jpg);
+    background-image:url(../pic/bck_about5.jpg);
     background-position:60% 40%;
     background-size: contain;
 }
