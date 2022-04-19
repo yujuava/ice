@@ -571,6 +571,7 @@ footer {
     position: relative;
     z-index: -1;
 }
+
 /* ==========<<online>>============ */
 .purchase {
     width: 80%;
@@ -1039,7 +1040,7 @@ tr{
         background-color: rgba(201, 227, 244, 0.79)
         ;
         z-index: 1;
-        transition: ease 1s;
+        transition: width ease 1.5s, background-color ease 4s;
     }
     .small:hover.small_list_1::before{
         content: '員工定期專業培訓';
@@ -1047,6 +1048,8 @@ tr{
         width: 68vw;
         background-color: rgba(28, 9, 9, 0.521)
         ;
+        white-space: nowrap;
+        overflow: hidden;
     }
     .small:hover.small_list_2::before{
         content: '高品質衛生管理';
@@ -1054,6 +1057,8 @@ tr{
         width: 68vw;
         background-color: rgba(28, 9, 9, 0.521)
         ;
+        white-space: nowrap;
+        overflow: hidden;
     }
     .small:hover.small_list_3::before{
         content: '食安高標檢測';
@@ -1061,6 +1066,9 @@ tr{
         width: 68vw;
         background-color: rgba(28, 9, 9, 0.521)
         ;
+        white-space: nowrap;
+        overflow: hidden;
+
     }
     
     .small_ingredients{
