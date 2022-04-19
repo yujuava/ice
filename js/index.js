@@ -1,19 +1,10 @@
 function $id(id){
     return document.getElementById(id)
 }
-function closeDetail(){
-    document.getElementById("detailChoose").style.display="none";
-    var closes = document.getElementsByTagName("input");
-    for(let i=0;i<closes.length;i++){
-        if(closes[i].type=="checkbox")
-        {closes[i].checked =false; 
-        }
-    }
-}
 var num=4; 
 var timerId;
 countDown();
-    timerId =window.setInterval(countDown,2500)//計時器單位是毫秒
+    timerId =window.setInterval(countDown,2800)//計時器單位是毫秒
 function countDown(){
     num--;
     if(num==3){
@@ -30,14 +21,24 @@ function countDown(){
         num=4;
     }
 }
-function init(){
-    document.getElementById("close").onclick=closeDetail;
-    var opens = document.getElementsByClassName("open");
-    for(i=0;i<=opens.length;i++){
-        opens[i].onclick=function(){
-            document.getElementById("detailChoose").style.display="flex";
-        }
-    }
 
+function init(){
+    var scrollFunc=window.onmousewheel=document.onmousewheel;
+    if(document.addEventListener){ document.addEventListener('DOMMouseScroll',scrollFunc,false) };
+    
+
+    let long = $id(contentLong);
+    long.onmousewheel= function(event){
+        event = event||window.event;
+        if(event.wheelDelta>0||event.detail<0){
+            long.style.weight=long.clientWeight-50+"vw";
+        }else{
+            long.style.weight=long.clientWeight+50+"vw";
+        }
+        event.preventDefault && event.preventDefault();
+        return false;
+    }
+    
 }
+
 window.addEventListener("load",init,false);

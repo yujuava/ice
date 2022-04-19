@@ -83,7 +83,7 @@ nav {
 }
 #a.occur,#b.occur,#c.occur{
     opacity: 1;
-    transition: ease 2s;
+    transition: ease 3s 0.4s;
     transform: scale(1.10);
 }
 #a,#b,#c{
@@ -91,7 +91,7 @@ nav {
     height: 100%;
     position: absolute;
     opacity: 0;
-    transition: ease 1s;
+    transition: ease 3s 0.4s;
     right: 0;
 }
 
@@ -485,33 +485,22 @@ footer {
         display: none;
     }
 
-    .logo_carousel {
-        width: 100%;
-        border-radius: 0% 48% 48% 0% / 10% 64% 59% 10%;
-    }
-
     .carousel_images{
         width: 100%;
-        overflow: hidden;
         height: 63vh;
+        border-radius: 0% 48% 48% 0% / 10% 64% 59% 10%;
         position: relative;
+        /* overflow: hidden; */
     }
     #a.occur,#b.occur,#c.occur{
-        opacity: 1;
-        transition: ease 4s 0.6s;
+        transition: ease  4s .4s;
+
     }
     #a,#b,#c{
         width: 100%;
-        height: 100%;
-        position: absolute;
-        opacity: 0;
-        transition: ease 2s 0.6s;
+        transition: ease  4s .4s;
+
     }
-    /* .carousel_images img {
-        width: 120%;
-        object-fit: cover;
-        object-position: center;
-    } */
 
     /* ===========<<FP-news_index>>============ */
     .news {
@@ -717,11 +706,12 @@ footer {
     .content {
         /* padding: 0 10px 0 10px; */
         /* border-radius: 50%; */
-        width: 45%;
+        width: 40vw;
         /* width: 90%; */
         margin: 20px 30px 0 0;
         z-index: 999;
         border-radius: 24px;
+        /* box-shadow: inset 0 0 5px 5px #00000000; */
     }
 
     .content img {
@@ -736,6 +726,8 @@ footer {
         width:40vw;
         border-radius: 24px;
         margin-left:auto ;
+        box-shadow: none;
+        background-color:#ffffff00;
     }
 
     .nav_item {
