@@ -13,20 +13,20 @@ function closeDetail(){
 var num=4; 
 var timerId;
 countDown();
-    timerId =window.setInterval(countDown,2000)//計時器單位是毫秒
+    timerId =window.setInterval(countDown,2500)//計時器單位是毫秒
 function countDown(){
     num--;
     if(num==3){
-        $id("a").classList.add("opcupy");
-        $id("c").classList.remove("opcupy");
+        $id("a").classList.add("occur");
+        $id("c").classList.remove("occur");
     }
     if(num==2){
-        $id("a").classList.remove("opcupy");
-        $id("b").classList.add("opcupy");
+        $id("a").classList.remove("occur");
+        $id("b").classList.add("occur");
     }
     if(num==1){
-        $id("b").classList.remove("opcupy");
-        $id("c").classList.add("opcupy");
+        $id("b").classList.remove("occur");
+        $id("c").classList.add("occur");
         num=4;
     }
 }
@@ -38,5 +38,6 @@ function init(){
             document.getElementById("detailChoose").style.display="flex";
         }
     }
+
 }
 window.addEventListener("load",init,false);
