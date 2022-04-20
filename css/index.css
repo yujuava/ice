@@ -29,11 +29,33 @@ section {
     --color_text: #e6f5f7;
 
 }
+#change{
+    position: absolute;
+    /* width: 100%;
+    height: 100%; */
+    top:0;
+    /* background-color:#425e66; */
+    z-index: 10000;
+    transition: ease;
+    animation: changepage 3s 1;    
+}
+@keyframes changepage{
+    from{
+        top:0;
+        width: 100%;
+        height: 100%;
+        background-color: #d1e5ecb9;
+        }
+    to{
 
+        width: 0;
+        height: 100%;
+        background-color: #00ccff41;
+    }
+}
 /* ============<<index>>================ */
 header {
     display: flex;
-    /* background-color: aquamarine; */
     box-sizing: border-box;
 }
 
@@ -66,24 +88,18 @@ nav {
 /* ============<<NO-logo_carousel>>=============== */
 .carousel {
     position: relative;
-    background-color: #ffffff54;
 }
 
 .logo_carousel {
     display: flex;
-    /* position:absolute; */
-    /* top: 0; */
     border-radius: 10% 46% 46% 10% / 0% 100% 100% 0%;
     overflow: hidden;
     z-index: 199;
 }
 .carousel_images{
-    /* border: 3px solid #000; */
     overflow: hidden;
-    /* width: 55%; */
     background-image: url(../pic/star_fruit2.jpg);
     background-size: 100% 100%;
-    /* border: 8px solid #3e3c24; */
 }
 #a.occur,#b.occur,#c.occur{
     opacity: 1;
@@ -139,7 +155,7 @@ nav {
     font-family: 'Kaisei Opti', serif;
     box-shadow: 0 0 25px 15px inset #ffffffc3;
 }
-.news:hover .news img{
+.news:hover.news img{
     transform: scale(1.05);
 }
 .news img {
@@ -148,8 +164,12 @@ nav {
     height: 10vh;
     transition: ease 1s;
 }
-.news a:hover{
-    box-shadow: 0 0 10px 10px #3c6b80;
+.news a:hover,section a:hover{
+    box-shadow: inset 0 0 10px 8px #ffffffbb;
+    color: #ffffff;
+}
+a{
+    transition: ease 0.1s;
 }
 /* ==========<<NO-product_outline_comments>>======== */
 .product_outline_comments {
@@ -243,6 +263,10 @@ nav {
 .ingredients {
     overflow: hidden;
     background-color: #93e2ff;
+}
+.mountain{
+    overflow: hidden;
+    /* height: 70vh; */
 }
 .ingredients:hover .mountain img{
     transform: scale(1.05);
@@ -584,7 +608,6 @@ footer {
     .product_outline_img {
         margin-top: 130px;
         width: 96%;
-        /* min-height: 30%; */
     }
 
     .product_outline h2::after {
@@ -647,7 +670,6 @@ footer {
     }
 
     .purchase_process .card {
-        /* width: 60%; */
         margin: auto;
     }
 
@@ -721,18 +743,12 @@ footer {
         width: 100%;
         right: 0px;
     }
-    /* .carousel_images img {
-        width: 100%;
-    } */
     .product_outline_img {
         width: 70%;
     }
     .purchase_process div>i {
         font-size: 13vw;
     }
-    /* .product_detail_mark {
-        top: 380%;
-    } */
     .purchase_process .card div {
         width: 25vw;
         height: 25vw;
@@ -742,26 +758,19 @@ footer {
   /* =============<<DE-desktop>>================ */
 @media screen and ( min-width: 992px){
     header {
-        /* padding: 20px; */
         justify-content: right;
     }
 
     .content {
-        /* padding: 0 10px 0 10px; */
-        /* border-radius: 50%; */
         width: 40vw;
-        /* width: 90%; */
         margin: 20px 30px 0 0;
         z-index: 999;
         border-radius: 24px;
-        /* box-shadow: inset 0 0 5px 5px #00000000; */
     }
 
     .content img {
         margin:0  30px;
         width: 60px;
-        /* height: 30px; */
-        /* position: absolute */
         display: none;
     }
 
@@ -791,7 +800,6 @@ footer {
     /* =============<<DE-carousel>>============== */
     .carousel {
         height: 105vh;
-        z-index: -1;
         width: 100%;
         top: 0;
     }
@@ -804,8 +812,6 @@ footer {
         height: 85%;
         align-items: center;
         border-radius: 10% 46% 46% 10% / 0% 100% 100% 0%;
-        /* overflow: hidden; */
-        /* background-color: #e6f5f700; */
     }
     .product_detail_mark {
         top: 30vw;
@@ -818,7 +824,6 @@ footer {
         height: 100vh;
         position: relative;
         z-index: 100;
-        /* border-right: 50px solid rgb(255, 255, 255); */
         box-shadow: inset 0 0 30px 0px #fff;
         background-image: url(../pic/bck5.jpg);
     }
@@ -827,8 +832,6 @@ footer {
         display: block;
         width: 30vh;
         height: 25vh;
-        /* position: absolute;
-        top: 35%; */
         margin: auto;
     }
 
@@ -911,7 +914,7 @@ footer {
 
     .mountain {
         position: relative;
-        /* z-index: 1; */
+        height: 70vh;
     }
 
     .mountain img {
@@ -925,10 +928,8 @@ footer {
         left: -15vh;
         width: 20vh;
         z-index: 1;
-        /* height: 70vh; */
         border-top: 70.2vh solid #93e2ff;
         border-right: 15vh solid #00000000;
-        /* background-color: black; */
     }
 
     /* ==============<<DE-purchase>>=============== */
@@ -951,7 +952,6 @@ footer {
     }
 
     .purchase_process .card div {
-        /* padding: 17%; */
         width: 10vw;
         height: 10vw;
         text-align: center;
