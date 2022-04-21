@@ -15,9 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600&family=Pacifico&display=swap" rel="stylesheet">
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
+
     <header>
         <input type="checkbox" id="main_switch">
         <div class="content">
@@ -42,22 +43,23 @@
     <section>
         <div class="contents_contact">
             <div class="about_detail">
-                <div class="about_us">
+                <div data-aos="fade-right" data-aos-duration="1500" class="about_us">
                     <h2></h2>
                     <p>"ice"有一種從容，夏日午後悉聽蟬鳴又或是一切靜謐於夕陽西下時那壯闊，當冬夜漸暖，涼意淡漠，閱覽山觀海景，期待著下一個相遇。</p>
                 </div>
                 <div class="about_pic1"></div>
             </div>
             <div class="about_detail">               <div class="about_pic2"></div>
-                <div class="about_us">
+                <div data-aos="fade-left" data-aos-duration="900" class="about_us">
                     <h2>聯絡資訊</h2> 
                     <p class="connect">facebook&youtube搜尋:"ice"<br>
                         歡迎關注加小鈴鐺，了解最新單品<br>信箱:abc520ice@gmail.com<br>電話:(03)425-1234<br>
                         不定期公休<br>親愛的歡迎來電詢問🌞
-                    </p></div>
+                    </p>
+                </div>
             </div>
             <div class="about_detail">
-                <div class="about_us">
+                <div data-aos="fade-right" data-aos-duration="900"  class="about_us">
                     <h2>門市資訊</h2>
                     <p>台北海邊店:新北市淡水區濟南路一段321號<br>桃園紅橙店:桃園市中壢區復興路46號9樓<br>台中綠草店:台中市西區德育路168號</p>
                 </div>
@@ -94,6 +96,12 @@
         </div>
         <div class="ru">使用條款｜隱私權保護政策｜ @ tibame<br>本平台僅供學習、展示之用。 若有侵權疑慮，您可以私訊緯育TibaMe，後續會由專人協助處理。</div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <div class="circle_1"></div>
+    <div class="trangle"></div>
     <div id="change"></div>
 </body>
 </html>

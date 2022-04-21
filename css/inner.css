@@ -1,3 +1,4 @@
+
 body{
     background-image: url(../pic/bck3.jpg);
     position: relative;
@@ -45,6 +46,53 @@ section{
         background-color: #00ccff41;
     }
 }
+.circle_1{
+    position: fixed;
+    width: 30vw;
+    height: 30vw;
+    background-color: #c6effa34;
+    top: 50%;
+    left: -2%;
+    border-radius: 50%;
+    z-index: -1;
+    animation: flow 8s infinite alternate;
+    transition: ease 3s;
+}
+.trangle{
+    position: fixed;
+    border-top: solid 0px #c6effa34;
+    border-right: solid 400px #c6effa34;
+    border-bottom: solid 400px #3db7f000;
+    top: 0%;
+    right: 0%;
+    z-index: -1;
+    animation: flow_2 8s infinite alternate;
+    transition: ease 3s;
+}
+@keyframes flow{
+    from{
+        width: 30vw;
+        height:30vw;
+        }
+    to{
+        top: 45%;
+        left: 0%;
+        width: 35vw;
+        height:35vw;
+    }
+}
+@keyframes flow_2{
+    from{
+        border-right: solid 400px #c6effa34;
+        border-bottom: solid 400px #3db7f000;
+        }
+    to{
+        border-right: solid 500px #c6effa34;
+        border-bottom: solid 500px #3db7f000;
+    }
+}
+
+
 /* ============<<index>>================ */
 header {
     display: flex;
@@ -145,17 +193,21 @@ nav {
     width: 80%;
     margin: auto;
     position: relative;
+    overflow: visible;
 }
 .type{
     background-image: url(../pic/wood.jpg);
     background-size: cover;
     border-radius: 10px;
+    position: -webkit-sticky;
     position: sticky;
     display: flex;
     flex-direction: column;
     left: 3%;
     top: 0%;
     z-index: 99;
+    overflow: visible;
+
 }
 .type h2{
     font-size: 24px;
@@ -217,9 +269,7 @@ h3::before{
     position: relative;
     overflow: hidden;
 }
-.item:hover img{
-    transform: scale(1.15);
-}
+
 .item p{
     text-align: center;
     margin: 0 0 10px 0;
@@ -229,7 +279,10 @@ h3::before{
     margin: auto;
     display: flex;
     transition: ease 1s;
-    z-index: -1;
+    z-index: 0;
+}
+.item_detail{
+    z-index: 99;
 }  
 .item_detail h4{
     display:block;
@@ -237,7 +290,7 @@ h3::before{
     margin: 0px 0 10px 0;
     color: #5a99ad;
     padding: 10px 0;
-    z-index: 1;
+    z-index:1;
     background-color: #cbf1ff;
 }
 .item_detail p{
@@ -409,31 +462,25 @@ footer {
     position: absolute;
     top: 0;
     content: '';
-    width: 68%;
-    height: 28vw;
-    border: 6px double #ffffff;
+    width: 69%;
+    height: 29vw;
+    border: 8px double #ffffff;
     margin: auto;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-
+    z-index: 0;
+    box-shadow:  0px 0px 15px 5px inset #ffffff;
 }
 .decorate{
     width: 70%;
     height: 30vw;
     overflow: hidden;
     margin: auto;
-    box-shadow:  0px 0px 5px 5px inset #ffffff;
-    z-index: 5;
-    /* display: inline-block;
-    position: relative; */
 }
 .decorate img{
-    position: sticky;
     width: 100%;
-    z-index: -1;
-    /* opacity: 0; */
 }
 .ig_news{
     margin: 4vw  0;
@@ -492,17 +539,27 @@ footer {
     left: 9%;
     top: 10%;
     position: absolute;
-    border: 6px double #065d6d;
+    /* border: 6px double #065d6d; */
 }
 .ingredients_items{
     width: 100%;
     /* margin: auto; */
     position: relative;
-    margin: 5vw 0;
+    margin: 2vw 0;
 }
 .ingredients_items p{
-    background-color: rgba(206, 240, 253, 0.856);
     line-height: 35px;
+    height: 80%;
+    background-image: linear-gradient(180deg, #cbf9ff 15%, #f5fcff00 80%,#ff000000 100%);
+}
+.ingredients_items p:last-child{
+    /* width: 60%; */
+    margin-left: auto;
+    right: 0;
+}
+.ingredients_items p:first-child{
+    left: 0;
+    /* background-color: #3c6a808e; */
 }
 .ingredients_items:first-child img{
     width: 30%;
@@ -554,9 +611,9 @@ footer {
     bottom: 0;
     box-sizing: border-box;
     line-height: 20px;
-    background-color: #ffffffe8;
+    background-color: #ffffff8c;
     padding: 1vw;
-    border-radius: 10px;
+    /* border-radius: 10px; */
     color: rgb(13, 89, 119);
 
 }
@@ -566,7 +623,7 @@ footer {
     height: 40vw;
     margin: 1vw 0 1vw  0;
     position: relative;
-    z-index: -1;
+    z-index: 0;
 }
 
 /* ==========<<online>>============ */
@@ -654,7 +711,7 @@ footer {
 .purchase_detail{
     width: 80%;
     margin: auto;
-    background-color: #ffffff;
+    background-color: #ffffff69;
     box-sizing: border-box;
     padding: 1vw;
     border-radius: 10px;
@@ -694,7 +751,7 @@ tr{
     display: inline-block;
     width: 25vh;
     text-align: center;
-    padding: 5px 0 5px 0;
+    padding: 10px 5px 10px 5px;
     text-decoration: none;
     background-color: #37bfff;
     border-radius: 10px;
@@ -759,6 +816,12 @@ tr{
 /* =============<<about>>=========== */
 
 @media screen and ( max-width: 991px){
+    .circle_1{
+        display: none;
+    }
+    .trangle{
+        display: none;
+    }
     .content img{
         width: 66px;
         height: 46px;
@@ -915,7 +978,25 @@ tr{
 
 /* =====================<<CE-news>>====================== */
     .news_content{
-        margin: 20vw 0 0 0;
+        padding-top: 20vw;
+        width: 90%;
+        /* margin: 20vw 0 0 0; */
+        margin: auto;
+    }
+    .decorate{
+        width: 90%;
+    }
+    .decorate img{
+        width: 100%;
+    }
+    .news_content::before{
+        border: 1px solid #fff;
+        margin: auto;
+        left: 0;
+        top: 20vw ;
+        width: 88%;
+        height: 28vw;
+
     }
     .the_news{
         display: block;
@@ -976,40 +1057,38 @@ tr{
     }
  /* ========<<CE-ingredients>>===== */  
     .ingredient_detail{
-        width: 80%;
+        width: 90%;
     } 
     .ingredient_detail h2{
         font-size: 16px;
     }
-    .ingredients_inner::before{
-        height: 49vw;
-        top: -5%;
-        width: 80%;
-    }
-    .ingredients_items{
-        display: flex;
-        flex-wrap: wrap;
-        position: relative;
-    }
     .ingredients_items p{
-        font-size: 11px;
         padding:2vw;
-        margin: auto;
-        font-size: 16px;
-        width: 70%;
-        padding: 2vw;
+        font-size: 13px;
         z-index: 1;
         line-height: 20px;
-        border-radius: 24px;
+    }
+    .ingredients_items p:last-child{
+        width: 60%;
+        margin-left: auto;
+    }
+    .ingredients_items p:first-child{
+        width: 60%;
+        margin-right: auto;
     }
     .ingredients_items img:first-child{
         position: absolute;
-        top: -5vw;
+        top: 0;
+        bottom: 0;
+        margin: auto;
     } 
     .ingredients_items img:nth-child(2){
         position: absolute;
         bottom: -5vw;
+        top: 0;
+        bottom: 0;
         right: 0;
+        margin: auto;
     } 
     .conduct_picture img{
         margin: 2px;
@@ -1022,18 +1101,18 @@ tr{
     }
     .small{
         position: relative;
+        /* width: 100%; */
     }
     .small::before{
         position: absolute;
         content: '⇶';
         color: #fff;
         font-size: 30px;
-        margin: auto;
         text-align: center;
         line-height: 50px;
         top: 30vw;
         width: 10vw;
-        height: 10vw;
+        height: 13vw;
         background-color: rgba(201, 227, 244, 0.79)
         ;
         z-index: 1;
@@ -1091,7 +1170,9 @@ tr{
     .purchase h2::after {
         width: 20%;
     }
-
+    .purchase_detail{
+        margin-bottom: 20px;
+    }
     .purchase_process {
         display: flex;
         /* flex-direction: column; */
@@ -1124,17 +1205,48 @@ tr{
     .purchase_process div>i {
         font-size: 5vw;
     }
+    .total{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
     /* =======<<timer>>========== */
    /* =======<<CE-about_detail>>========== */ 
     
-}
-.contents_contact{
-    width: 90%;
-}
-.about_pic_bck{
-    width: 90%;
-    margin-top: 13vw;
-    background-size: 100%;
+    
+    .contents_contact{
+        width: 93%;
+    }
+    .about_bck{
+        padding-top: 20vw;
+    }
+    .about_pic_bck{
+        width: 93%;
+        padding-top: 18vw;
+        background-size: 100%;
+        background-position: center;
+
+    }
+    .about_us{
+        padding: 0.5vw;
+    }
+    .about_us p{
+        line-height: 20px;
+        font-size: 13px;
+    }
+    .about_pic1{
+        background-position:40% 0%;
+        background-size: auto auto;
+    }
+    .about_pic2{
+        background-position: 40% 65%;
+        background-size: auto auto;
+    }
+    .map{
+        /* width: 40%; */
+        /* height: 10vw; */
+        margin-left: auto;
+    }
 }
 /* =============<<FP-desktop>>================ */
 @media screen and ( min-width: 668px){
@@ -1273,6 +1385,9 @@ tr{
         display: flex;
         height: 22vw;
     }  
+    .item:hover img{
+        transform: scale(1.15);
+    }
     /* ================<<NO-footer>>================= */
     .logo_footer img {
         margin: auto;
@@ -1359,6 +1474,11 @@ tr{
         margin: 0.5vw;
     }
 /* ========<<DE-ingredients>>======= */
+    .ingredients_items span{
+        color: #3c6b80;
+        font-size: 20px;
+        /* font-weight: 600; */
+    }
     .ingredient_detail{
         width: 70%;
     }
@@ -1370,11 +1490,12 @@ tr{
         position: absolute;
         display: block;
         width: 60%;
-        margin: auto;
-        top: 40%;
-        left: 20%;
+        /* margin: auto; */
+        top: 30%;
+        /* left: 20%; */
         padding: 10px;
-        border-radius: 10px;
+        /* border-radius: 10px; */
+        color: #274553;
     }
     .conduct_picture img{
         margin: 10px;
