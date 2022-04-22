@@ -1052,6 +1052,9 @@ tr{
         margin: 2vw;
     }
  /* ========<<CE-ingredients>>===== */  
+    canvas{
+        display: none;
+    }
     .ingredient_detail{
         width: 90%;
     } 
@@ -1297,29 +1300,37 @@ tr{
     }
 
     .content {
-        /* padding: 0 10px 0 10px; */
-        border-radius: 100%;
-        width: 45%;
+        width: 40vw;
+        /* width: 500px; */
         margin: 20px 30px 0 0;
         z-index: 999;
+        border-radius: 24px;
+        transition: ease 1s;
+
     }
 
     .content img {
-        width: 90px;
-        height: 64px;
+        margin:0  30px;
+        width: 60px;
+        position: absolute;
+        top: 0;
         display: none;
     }
 
-    nav {
-        width: 100%;
+   nav {
+        width:40vw;
         border-radius: 24px;
-        margin: auto;
+        margin-left:auto ;
+        box-shadow: none;
+        background-color:#ffffff00;
     }
 
     .nav_item {
         display: flex;
         justify-content: space-around;
+        margin: 5px 0;
     }
+
 
     .nav_item li {
         display: inline-block;
@@ -1470,6 +1481,15 @@ tr{
         margin: 0.5vw;
     }
 /* ========<<DE-ingredients>>======= */
+    .ingredient_water{
+        display: flex;
+        position: relative;
+    }   
+    canvas{
+        position: absolute;
+        display: flex;
+        left: 0;
+    }
     .ingredients_items span{
         color: #3c6b80;
         font-size: 20px;

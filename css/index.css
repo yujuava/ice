@@ -193,7 +193,7 @@ nav {
     display: flex;
     bottom: 10%;
     right: 0;
-    z-index: 1099;
+    z-index: 5;
     background-color: #d6ffff;
     width: 90%;
     align-items: center;
@@ -817,14 +817,19 @@ footer {
 
     .content {
         width: 40vw;
+        /* width: 500px; */
         margin: 20px 30px 0 0;
         z-index: 999;
         border-radius: 24px;
+        transition: ease 1s;
+
     }
 
     .content img {
         margin:0  30px;
         width: 60px;
+        position: absolute;
+        top: 0;
         display: none;
     }
 
@@ -839,6 +844,7 @@ footer {
     .nav_item {
         display: flex;
         justify-content: space-around;
+        margin: 5px 0;
     }
 
     .nav_item li {

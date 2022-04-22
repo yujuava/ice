@@ -18,8 +18,8 @@
 <body>
     <header>
         <input type="checkbox" id="main_switch">
-        <div class="content">
-            <a href="index.html"><img src="./pic/logo.png" alt=""></a>            
+        <div id="contentLong"class="content">
+            <a href="index.html"><img id="logoLong" src="./pic/logo.png" alt=""></a>
             <nav>
                 <ul class="nav_item">
                     <li><a href="product.html">冰品一覽</a></li>
@@ -35,7 +35,8 @@
     <section>
         <img class="ingredients_bck"src="./pic/mountain2.jpg" alt="">
     </section>
-    <section>
+    <section class="ingredient_water">
+        <canvas width="400" height="600"></canvas>
         <div class="ingredient_detail">
             <h2>嚴選食材</h2>
             <div class="ingredients_inner">
@@ -114,11 +115,13 @@
         </div>
         <div class="ru">使用條款｜隱私權保護政策｜ @ tibame<br>本平台僅供學習、展示之用。 若有侵權疑慮，您可以私訊緯育TibaMe，後續會由專人協助處理。</div>
     </footer>
-        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/inner.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
     <div class="circle_1"></div>
+    <script src="./js/nav.js"></script>
     <!-- <div class="trangle"></div> -->
     <div id="change"></div>
 </body>

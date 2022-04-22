@@ -22,6 +22,17 @@ function countDown(){
     }
 }
 
+window.onscroll=function(){
+    if (window.scrollY >= "100") {
+        document.getElementById("contentLong").style.width="90"+"vw";
+        document.getElementById("logoLong").style.display="block";
+    }else{
+        document.getElementById("contentLong").style.width="40"+"vw";
+        document.getElementById("logoLong").style.display="none";
+    }
+}
+
+
 function init(){
     var scrollFunc=window.onmousewheel=document.onmousewheel;
     if(document.addEventListener){ document.addEventListener('DOMMouseScroll',scrollFunc,false) };
@@ -39,6 +50,14 @@ function init(){
         return false;
     }
     
+    // window.onscroll=function(){
+    //     if (window.scrollY >= "100") {
+    //         document.getElementById("contentLong").style.width="90"+"%";
+    //         document.getElementById("logoLong").style.display="block";
+    //     }else{
+    //         document.getElementById("contentLong").style.width="45"+"%";
+    //     }
+    // }
 }
 
 window.addEventListener("load",init,false);
