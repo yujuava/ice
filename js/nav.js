@@ -1,4 +1,4 @@
-if(window.innerWidth > 769){
+if(window.innerWidth > 767){
     window.onscroll=function(){
         if (window.scrollY >= "100") {
             document.getElementById("contentLong").style.width="90"+"vw";
