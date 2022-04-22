@@ -22,6 +22,8 @@ function countDown(){
     }
 }
 
+if(window.innerWidth > 769){
+
 window.onscroll=function(){
     if (window.scrollY >= "100") {
         document.getElementById("contentLong").style.width="90"+"vw";
@@ -31,7 +33,7 @@ window.onscroll=function(){
         document.getElementById("logoLong").style.display="none";
     }
 }
-
+}
 
 function init(){
     var scrollFunc=window.onmousewheel=document.onmousewheel;
