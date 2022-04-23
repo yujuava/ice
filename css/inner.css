@@ -50,7 +50,7 @@ section{
     position: fixed;
     width: 30vw;
     height: 30vw;
-    background-color: #c6effa34;
+    background-color: #65afc434;
     top: 50%;
     left: -2%;
     border-radius: 50%;
@@ -58,13 +58,15 @@ section{
     animation: flow 8s infinite alternate;
     transition: ease 3s;
 }
-.trangle{
+.circle_2{
     position: fixed;
-    border-top: solid 0px #c6effa34;
+    /* border-top: solid 0px #c6effa34;
     border-right: solid 400px #c6effa34;
-    border-bottom: solid 400px #3db7f000;
-    top: 0%;
-    right: 0%;
+    border-bottom: solid 400px #3db7f000; */
+    border-radius: 50%;
+    background-color: #65afc434;
+    top: -2%;
+    right: -3%;
     z-index: -1;
     animation: flow_2 8s infinite alternate;
     transition: ease 3s;
@@ -73,22 +75,26 @@ section{
     from{
         width: 30vw;
         height:30vw;
-        }
+        opacity: 0.5;
+    }
     to{
         top: 45%;
         left: 0%;
         width: 35vw;
         height:35vw;
+        opacity: 0.3;
     }
 }
 @keyframes flow_2{
     from{
-        border-right: solid 400px #c6effa34;
-        border-bottom: solid 400px #3db7f000;
+        width: 25vw;
+        height:25vw;
+        opacity: 0.6;
         }
     to{
-        border-right: solid 500px #c6effa34;
-        border-bottom: solid 500px #3db7f000;
+        width: 30vw;
+        height:30vw;
+        opacity: 0.3;
     }
 }
 
@@ -343,7 +349,10 @@ footer {
     flex-direction: column;
     align-items: center;
 }
-
+.footer_divide a{
+    text-decoration: none;
+    color: #3c6b80;
+}
 .footer_divide ul:last-child {
     flex-direction: column;
 }
@@ -885,16 +894,20 @@ tr{
         display: none;
     }
     /* ================<<CE-footer>>================= */
-    .logo_footer img{
+    .logo_footer img {
         width: 20%;
     }
-    .container{
+
+    .container {
         flex-direction: column;
+        margin-bottom: 10px;
     }
-    .footer_divide{
+
+    .footer_divide {
         width: 100%;
         flex-wrap: wrap;
     }
+
     .footer_divide ul{
         margin: auto;
         width: 40%;
@@ -903,8 +916,13 @@ tr{
     .footer_divide li{
         font-size: 10px;
     }
+    .web i{
+        font-size: 14px;
+    }
     .ru{
+        margin-top: 5px;
         font-size: 8px;
+        line-height: 16px;
     }
     /* ===============<<NO-type>>=================== */
     .contents{
@@ -1306,6 +1324,10 @@ tr{
     .collect{
         width: 70%;
     }
+    .bigger_ingredients div{
+        width: 65%;
+        height: 8vw;
+    }
 }
    /* =============<<DE-desktop>>================ */
 @media screen and ( min-width: 992px){
@@ -1427,7 +1449,7 @@ tr{
         height: 22vw;
     }  
     .item:hover img{
-        transform: scale(1.15);
+        transform: scale(1.10);
     }
     /* ================<<NO-footer>>================= */
     .logo_footer img {
@@ -1441,8 +1463,10 @@ tr{
 
     .footer_divide ul {
         width: 20%;
-        font-size: 18px;
+        line-height: 30px;
+        font-size: 16px;
     }
+
     /* ==============<<detail_collect>>================== */
     .collect{
         width: 50%;
@@ -1586,6 +1610,15 @@ tr{
     .small img{
         width: 100%;
         height: 15vw;
+    }
+    #bigPic{
+        opacity: 0.5;
+        transition: ease 3s;
+    }
+    .bigger_ingredients div{
+        width: 50vw;
+        height: 6vw;
+
     }
     /* ==========<<DE-online>>============ */
     .purchase h2 {

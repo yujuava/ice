@@ -508,6 +508,10 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+.footer_divide a{
+    text-decoration: none;
+    color: #3c6b80;
+}
 
 .footer_divide ul:last-child {
     flex-direction: column;
