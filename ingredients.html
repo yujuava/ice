@@ -22,11 +22,11 @@
             <a href="index.html"><img id="logoLong" src="./pic/logo.png" alt=""></a>
             <nav>
                 <ul class="nav_item">
-                    <li><a href="product.html">冰品一覽</a></li>
-                    <li><a href="news.html">最新消息</a></li>
-                    <li><a href="ingredients.html">嚴選食材</a></li>
-                    <li><a href="online_order.html">線上訂購</a></li>
-                    <li><a href="contact.html">聯絡我們</a></li>
+                    <li class="nav_li"><a href="product.html">冰品一覽</a></li>
+                    <li class="nav_li"><a href="news.html">最新消息</a></li>
+                    <li style="border-bottom:2px solid rgba(57, 187, 226, 0.555)" class="nav_li"><a  href="ingredients.html">嚴選食材</a></li>
+                    <li class="nav_li"><a href="online_order.html">線上訂購</a></li>
+                    <li class="nav_li"><a href="contact.html">聯絡我們</a></li>
                 </ul>
             </nav>
             <label class="hb" for="main_switch"><i class="fa-solid fa-bars"></i></label>
@@ -36,16 +36,16 @@
         <img class="ingredients_bck"src="./pic/mountain2.jpg" alt="">
     </section>
     <section class="ingredient_water">
-        <canvas id="canvas" width="400" height="600"></canvas>
+        <!-- <canvas id="canvas" width="400" height="600"></canvas> -->
         <div class="ingredient_detail">
             <h2>嚴選食材</h2>
             <div class="ingredients_inner">
                 <div data-aos="fade-right" data-aos-duration="1500" class="ingredients_items">
                     <img  src="./pic/ingredients4.jpg.png" alt="">
-                    <p><span>主要用水:</span><br>來自中央山脈、天然純淨。埔里水源甘甜回香。水源製造過程從過濾、裝填、包裝、運送都在嚴格的品質管制下完成。水質潔淨，味道甘醇沁涼。</p>
+                    <p><span class="water_bubble">主要用水:</span><br>來自中央山脈、天然純淨。埔里水源甘甜回香。水源製造過程從過濾、裝填、包裝、運送都在嚴格的品質管制下完成。水質潔淨，味道甘醇沁涼。</p>
                 </div>
                 <div data-aos="fade-left" data-aos-duration="1500"  class="ingredients_items">
-                    <p><span>當季芒果:</span><br>採用愛文主要產地在屏東枋山、台南玉井、南化等地，產季落在4月下旬至6月上旬。熟成後果實豔紅、皮薄肉細、味香且多汁，高甜蜜之中帶點微酸，十分耐吃。</p>                    
+                    <p><span class="mango_taro">當季芒果:</span><br>採用愛文主要產地在屏東枋山、台南玉井、南化等地，產季落在4月下旬至6月上旬。熟成後果實豔紅、皮薄肉細、味香且多汁，高甜蜜之中帶點微酸，十分耐吃。</p>                    
                     <img src="./pic/ingredients2.jpg.png" alt="">
                 </div>
             </div>
@@ -77,10 +77,10 @@
             <div class="ingredients_inner">
                 <div class="ingredients_items">
                     <img data-aos="fade-right" data-aos-duration="1100"  src="./pic/ingredients3.jpg.png" alt="">
-                    <p data-aos="fade-up" data-aos-duration="1100"  ><span>珍珠製作:</span><br>在珍珠製造部分，從珍珠研發、製造過程、包裝輸出皆使用自動化設備，成分單純口感Q彈有嚼勁，擁有多種顏色、口味及口感可供選擇，整個製程透明化一貫作業並通過 HACCP、ISO22000：2018 食品安全管理系統驗證，確保品質與食品衛生。</p>
+                    <p data-aos="fade-up" data-aos-duration="1100"  ><span class="water_bubble">珍珠製作:</span><br>在珍珠製造部分，從珍珠研發、製造過程、包裝輸出皆使用自動化設備，成分單純口感Q彈有嚼勁，擁有多種顏色、口味及口感可供選擇，整個製程透明化一貫作業並通過 HACCP、ISO22000：2018 食品安全管理系統驗證，確保品質與食品衛生。</p>
                 </div>
                 <div class="ingredients_items">
-                    <p data-aos="fade-right" data-aos-duration="1500"  ><span>芋圓製作:</span><br>嚴選上等新鮮的原料，一機整合切割、搓圓功能，高效生產圓潤晶透的芋圓。省去傳統手工製作的繁複程序，每道製作過程皆由人工細心管制，不馬虎，高品質的堅持與用心，吃的到的美味與安心。</p>                    
+                    <p data-aos="fade-right" data-aos-duration="1500"  ><span class="mango_taro">芋圓製作:</span><br>嚴選上等新鮮的原料，一機整合切割、搓圓功能，高效生產圓潤晶透的芋圓。省去傳統手工製作的繁複程序，每道製作過程皆由人工細心管制，不馬虎，高品質的堅持與用心，吃的到的美味與安心。</p>                    
                     <img data-aos="fade-up" data-aos-duration="1500" src="./pic/ingredients1.jpg.png" alt="">
                 </div>
             </div>
@@ -97,11 +97,10 @@
                     <li>日式雪花冰</li>
                 </ul>
                 <ul>最新消息
-                    <li>新品上市</li>
-                    <li>店休公告</li>
+                    <li>熱門消息</li>
                 </ul>
                 <ul>線上訂購
-                    <li>填寫表單</li>
+                    <li>購物車</li>
                 </ul>
                 <ul><p>聯絡我們</p>
                     <div class="web">

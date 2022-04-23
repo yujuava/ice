@@ -123,6 +123,7 @@ nav {
     color: #7DACBA;
     font-weight: 500;
     font-family: 'Kaisei Opti', serif;
+    padding: 5px 0;
 }
 
 /* ============<<NO-product>>================ */
@@ -312,14 +313,16 @@ h3::before{
 footer {
     width: 100%;
     z-index: 99;
-    background-image:linear-gradient(to top,#31a9d1d5 10%,#ffffff33);
+    background-image:linear-gradient(to top,#31a9d1d5 30%,#ffffff33 );
 }
 
 .container {
-    padding: 3%;
+    padding-top: 3%;
     margin: auto;
     display: flex;
     width: 80%;
+    border-bottom: 1px dashed #e3e5e9;
+    justify-content: space-around;
 }
 
 .logo_footer img {
@@ -328,7 +331,7 @@ footer {
 
 .footer_divide {
     display: flex;
-    margin: auto;
+    margin-top: auto;
 }
 
 .footer_divide ul {
@@ -346,7 +349,7 @@ footer {
 }
 
 .footer_divide li {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 30px;
     display: inline-block;
 }
@@ -358,15 +361,20 @@ footer {
 }
 
 .footer_divide ul:last-child li {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .ru {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     color: #3c6b80;
     line-height: 20px;
+    margin: auto;
+    width: 80%;
 }
+
+
+
 
 /* ==============<<detail_collect>>================== */
 .detail_collect{
@@ -548,7 +556,7 @@ footer {
 .ingredients_items p{
     line-height: 35px;
     height: 80%;
-    background-image: linear-gradient(180deg, #cbf9ff 15%, #f5fcff00 80%,#ff000000 100%);
+    background-image: linear-gradient(180deg, #cbf9ff 29%, #f5fcffb6 90%,#ff000000 100%);
 }
 .ingredients_items p:last-child{
     margin-left: auto;
@@ -890,7 +898,13 @@ tr{
     .footer_divide ul{
         margin: auto;
         width: 40%;
-        font-size: 18px;
+        font-size: 15px;
+    }
+    .footer_divide li{
+        font-size: 10px;
+    }
+    .ru{
+        font-size: 8px;
     }
     /* ===============<<NO-type>>=================== */
     .contents{
@@ -1334,10 +1348,28 @@ tr{
 
 
     .nav_item li {
+        box-sizing: border-box;
         display: inline-block;
         font-size: 15px;
-        margin: 10px 0 10px 0;
+        margin: 5px 0 5px 0;
+        position: relative;
     }
+    .nav_li::after{
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 2px;
+        top: 93%;
+        background-color: rgba(57, 187, 226, 0.555);
+        opacity: 0;
+    }    
+    /* .nav_item li:hover{ */
+        /* border-bottom:2px solid rgba(57, 187, 226, 0.555); */
+    /* } */
+    .nav_li:hover.nav_li::after{
+        opacity: 1;
+    }
+
     /* =============<<DE-type>>============== */
     .content label {
         display: none;
@@ -1483,6 +1515,17 @@ tr{
         margin: 0.5vw;
     }
 /* ========<<DE-ingredients>>======= */
+    .ingredients_inner div:first-child{
+        margin-bottom: 70px;
+        /* background-color: #3c6b80; */
+        background-image: linear-gradient(to right , rgba(127, 233, 224, 0) 0%,rgba(167, 227, 245, 0.61) 15%,rgba(255, 255, 255, 0) 60%);
+    }
+    .ingredients_inner div:nth-child(2){
+        margin-bottom: 60px;
+        /* background-color: #3c6b80; */
+        background-image: linear-gradient(to left , rgba(127, 233, 224, 0) 0%,rgba(167, 227, 245, 0.61) 10%,rgba(255, 255, 255, 0) 50%);
+        padding-bottom: 10px;
+    }
     .ingredient_water{
         display: flex;
         position: relative;
@@ -1497,6 +1540,24 @@ tr{
         color: #3c6b80;
         font-size: 20px;
         /* font-weight: 600; */
+        position: relative;
+    }
+    .water_bubble::before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        height: 2px;
+        width: 55vw;
+        background-color: #3c6b80;
+    }
+    .mango_taro::before{
+        content: '';
+        position: absolute;
+        top: 100%;
+        right: 0;
+        height: 2px;
+        width: 55vw;
+        background-color: #3c6b80;
     }
     .ingredient_detail{
         width: 70%;

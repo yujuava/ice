@@ -478,14 +478,16 @@ a{
 footer {
     width: 100%;
     z-index: 99;
-    background-image:linear-gradient(to top,#31a9d1d5 10%,#ffffff33);
+    background-image:linear-gradient(to top,#31a9d1d5 30%,#ffffff33 );
 }
 
 .container {
-    padding: 3%;
+    padding-top: 3%;
     margin: auto;
     display: flex;
     width: 80%;
+    border-bottom: 1px dashed #e3e5e9;
+    justify-content: space-around;
 }
 
 .logo_footer img {
@@ -494,7 +496,7 @@ footer {
 
 .footer_divide {
     display: flex;
-    margin: auto;
+    margin-top: auto;
 }
 
 .footer_divide ul {
@@ -512,7 +514,7 @@ footer {
 }
 
 .footer_divide li {
-    font-size: 16px;
+    font-size: 13px;
     line-height: 30px;
     display: inline-block;
 }
@@ -524,14 +526,16 @@ footer {
 }
 
 .footer_divide ul:last-child li {
-    font-size: 25px;
+    font-size: 22px;
 }
 
 .ru {
     text-align: center;
-    font-size: 12px;
+    font-size: 10px;
     color: #3c6b80;
     line-height: 20px;
+    margin: auto;
+    width: 80%;
 }
 
 
@@ -773,6 +777,7 @@ footer {
 
     .container {
         flex-direction: column;
+        margin-bottom: 10px;
     }
 
     .footer_divide {
@@ -780,10 +785,21 @@ footer {
         flex-wrap: wrap;
     }
 
-    .footer_divide ul {
+    .footer_divide ul{
         margin: auto;
         width: 40%;
-        font-size: 18px;
+        font-size: 15px;
+    }
+    .footer_divide li{
+        font-size: 10px;
+    }
+    .web i{
+        font-size: 14px;
+    }
+    .ru{
+        margin-top: 5px;
+        font-size: 8px;
+        line-height: 16px;
     }
 }
 @media only screen and (min-width: 720px){
@@ -1051,7 +1067,7 @@ footer {
     .footer_divide ul {
         width: 20%;
         line-height: 30px;
-        font-size: 18px;
+        font-size: 16px;
     }
 }
  
