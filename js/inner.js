@@ -18,6 +18,5 @@ function init(){
             document.getElementById("detailChoose").style.display="flex";
         }
     }
-    
 }
 window.addEventListener("load",init,false);

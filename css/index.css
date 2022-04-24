@@ -639,7 +639,21 @@ footer {
     #main_switch:checked~.content nav {
         display: block;
     }
-
+    #openhb{
+        display: block;
+        transition: ease 1s ;
+    }
+    #openhb:active{
+        transform: rotate(270deg);
+    }
+    #closehb{
+        display: none;
+        transition: ease 1s;
+    }
+    #closehb:active{
+        display: none;
+        transform: rotate(270deg);
+    }
     /* ===========<<FP-carousel>>============ */
     .carousel {
         min-height: 80vh;

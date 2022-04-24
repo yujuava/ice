@@ -29,7 +29,8 @@
                     <li class="nav_li"><a href="contact.html">聯絡我們</a></li>
                 </ul>
             </nav>
-            <label class="hb" for="main_switch"><i class="fa-solid fa-bars"></i></label>
+            <label id="opanNav"class="hb" for="main_switch"><i id="openhb"class="fa-solid fa-angle-down"></i>
+                <i  id="closehb" class="fa-solid fa-xmark"></i></label>
         </div>       
     </header>
     <section>
@@ -79,7 +80,7 @@
     </section>
     <section>
         <div class="purchase_detail">
-            <table>
+            <table id="tab">
                 <caption>購物車</caption>
                 <tr class="shopping_title">
                     <th>商品資訊</th>
@@ -88,25 +89,64 @@
                     <th>小計</th>
                     <th>標記</th>
                 </tr>
-                <tr class="item_number">
+                <tr id="collect_1"class="item_number">
                     <td>芒果雪花冰</td>
                     <td>NT$55</td>
-                    <td><input class="num"type="number"></td>
+                    <td class="td_num"><input class="num"type="number"></td>
                     <td>NT$55</td>
-                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td><i class="collect_close  fa-solid fa-xmark"></i></td>
                 </tr>
                 <tr class="item_number">
                     <td>芒果雪花冰</td>
                     <td>NT$55</td>
-                    <td><input class="num" type="text"></td>
+                    <td class="td_num"><input class="num" type="text"></td>
                     <td>NT$55</td>
-                    <td><i class="fa-solid fa-xmark"></i></td>
+                    <td><i class="collect_close fa-solid fa-xmark"></i></td>
                 </tr>
             </table>
             <div class="total">
                 <span>總金額</span>
                 <span>NT$110</span>
-                <a href="javascript:;">查看付款方式及地址</a>
+                <a id="showForm" href="javascript:;">查看付款方式及地址</a>
+            </div>
+        </div>
+    </section>
+    <section id="payDetail">
+        <div class="form_paypage">
+            <div class="total_account">
+                <i id="closePay" class="fa-solid fa-xmark"></i>
+                <label for="">合計</label>
+                <span>NT$110元</span>
+            </div>
+            <div class="customer">
+                <div class="customer_detail">
+                    <label class="customer_data"for="">收件人資料</label>
+                    <hr class="hrs">
+                    <label for="">收件人姓名</label>
+                    <input type="text" placeholder="請輸入收件人姓名">
+                    <label for="" >電子信箱</label>
+                    <input type="email" placeholder="請輸入xxx@xxx.com格式">
+                    <label for="" >電話號碼</label>     
+                    <input type="text" placeholder="請輸入09xxxxxxxx格式">
+                    <label for="">地點</label>
+                    <select name="" id="">
+                        <option value="">請選擇</option>
+                        <option value="">台北市</option>
+                        <option value="">桃園市</option>
+                        <option value="">台中市</option>
+                    </select>
+                    <input type="text" placeholder="請輸入.ex:中壢區復興路46號9樓">
+                    <label for="">訂單備註</label>
+                    <textarea name="" id="" cols="10" rows="5"  placeholder="ex:不用塑膠袋/不用餐具"></textarea>
+                </div>
+                <label for="">付款方式</label>
+                <select class="pay"name="" id="">
+                    <option value="">貨到付款</option>
+                    <option value="">line pay付款</option>
+                    <option value="">銀行帳號匯款</option>
+                    <option value="">信用卡付款</option>
+                </select>
+                <a id="pay_fulfill" href="">送出訂單/前往付款</a>
             </div>
         </div>
     </section>
@@ -133,8 +173,10 @@
                     <input type="checkbox">包心粉圓
                     <input type="checkbox">QQ
                 </div>
-                <label class="nt"for="">NT$45</label>
-                <button>加入購物車
+                <label class="nt" for="">NT$45</label>
+                <label for="">數量</label>
+                <input class="number_pay"type="number">
+                <button id="addShoppingCar">加入購物車
                     <i class="fa-solid fa-cart-shopping"></i>
                 </button>
             </div>
@@ -247,9 +289,14 @@
     <div class="top_shoppingcar">
         <div class="top"><a href="#top">top</a></div>
         <div class="shopping_car">
+            <span id="chooseItems">0</span>
             <a href="online_order.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
+    <script src="./js/hbicon.js"></script>
+    <script src="./js/closeBox.js"></script>
+    <script src="./js/delete_pro.js"></script>
+    <script src="./js/pay.js"></script>
     <div class="circle_1"></div>
     <div class="circle_2"></div>
     <script src="./js/nav.js"></script>

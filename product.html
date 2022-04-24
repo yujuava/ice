@@ -28,7 +28,8 @@
                     <li class="nav_li"><a href="contact.html">聯絡我們</a></li>
                 </ul>
             </nav>
-            <label class="hb" for="main_switch"><i class="fa-solid fa-bars"></i></label>
+            <label id="opanNav"class="hb" for="main_switch"><i id="openhb"class="fa-solid fa-angle-down"></i>
+                <i  id="closehb" class="fa-solid fa-xmark"></i></label>
         </div>       
     </header>
     <section class="product_roller">
@@ -64,7 +65,9 @@
                     <input type="checkbox">QQ
                 </div>
                 <label class="nt"for="">NT$45</label>
-                <button>加入購物車
+                <label for="">數量</label>
+                <input class="number_pay"type="number">
+                <button id="addShoppingCar">加入購物車
                     <i class="fa-solid fa-cart-shopping"></i>
                 </button>
             </div>
@@ -245,11 +248,14 @@
     <div class="top_shoppingcar">
         <div class="top"><a href="#top">top</a></div>
         <div class="shopping_car">
+            <span id="chooseItems">0</span>
             <a href="online_order.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </div>
+    <script src="./js/closeBox.js"></script>
     <div class="circle_1"></div>
     <div class="circle_2"></div>
+    <script src="./js/hbicon.js"></script>
     <script src="./js/canvas.js"></script>
     <script src="./js/nav.js"></script>
     <script src="./js/inner.js"></script>
