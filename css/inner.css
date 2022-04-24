@@ -582,6 +582,16 @@ footer {
     background-color: #ffffff;
 }
 /* ====================<<ig_news>>====================== */
+.contents_ig:hover.contents_ig img{
+    transform: scale(1.05);
+}
+.contents_ig img{
+    transition: ease 1s;
+}
+.ig_detail{
+    background-color: #ffffff;
+    z-index: 1;
+}
 .ig_news{
     margin: 4vw  0;
 }
