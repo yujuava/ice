@@ -196,7 +196,7 @@ nav {
     opacity: 1;
     animation-name: ice;
     animation-iteration-count:infinite;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     transition: ease ;
     animation-direction:alternate; 
 }
@@ -523,13 +523,14 @@ footer {
 /* =====================<<ig>>====================== */
 .news_content{
     position: relative;
-    width: 100%;
+    overflow: hidden;
+    margin:auto;
 }
 .news_content::before{
     position: absolute;
     top: 0;
     content: '';
-    width: 69%;
+    width: 96%;
     height: 29vw;
     border: 8px double #ffffff;
     margin: auto;
@@ -537,18 +538,50 @@ footer {
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 0;
+    z-index: 1;
     box-shadow:  0px 0px 15px 5px inset #ffffff;
 }
-.decorate{
-    width: 70%;
+#sliderBoard{
+    width: 70vw;
+}
+#content{
+    display: flex;
     height: 30vw;
     overflow: hidden;
-    margin: auto;
+    position: relative;
+    transition: ease ;
 }
-.decorate img{
+#contentButton{
+    position: absolute;
+    text-align: center;
+    height: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+}
+#content li{
+    float: left;
+    width: 80vw;
+}
+#contentButton li{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #ffffff9c;
+    display: inline-block;
+    margin: 5px;
+}
+.image{
     width: 100%;
+    /* opacity: 0; */
+    z-index: -1;
+    position: relative;
 }
+#contentButton li.clickMe{
+    background-color: #ffffff;
+}
+/* ====================<<ig_news>>====================== */
 .ig_news{
     margin: 4vw  0;
 }
@@ -814,9 +847,6 @@ td{
 .td_num{
     display: flex;
 }
-/* #collect_1{
-    display: none;
-} */
 .num{
     width: 2vw;
     display: block;
@@ -1047,6 +1077,7 @@ textarea{
     #openhb{
         display: block;
         transition: ease 1s ;
+        font-size: 26px;
     }
     #openhb:active{
         transform: rotate(270deg);
@@ -1054,10 +1085,12 @@ textarea{
     #closehb{
         display: none;
         transition: ease 1s;
+        font-size: 24px;
     }
     #closehb:active{
         display: none;
         transform: rotate(270deg);
+
     }
     /* ============<<CE-product>>================ */
     .roller{
@@ -1104,6 +1137,9 @@ textarea{
         line-height: 16px;
     }
     /* ===============<<NO-type>>=================== */
+    .product_roller{
+        padding-top: 10vw;
+    }
     .contents{
         text-align: center;
         display: block;
@@ -1186,26 +1222,26 @@ textarea{
 
 /* =====================<<CE-news>>====================== */
     .news_content{
-        padding-top: 20vw;
-        width: 90%;
-        /* margin: 20vw 0 0 0; */
-        margin: auto;
+        padding-top: 17vw;
     }
-    .decorate{
-        width: 90%;
-    }
-    .decorate img{
-        width: 100%;
+    #sliderBoard{
+        width: 70vw;
     }
     .news_content::before{
-        border: 1px solid #fff;
-        margin: auto;
-        left: 0;
-        top: 20vw ;
-        width: 88%;
-        height: 28vw;
-
+        top: 17vw;
+        width: 95%;
+        height: 30vw;
     }
+    #contentButton{
+        position: absolute;
+        bottom: -5.5vw;
+    }
+    #contentButton li{
+        width: 4vw;
+        height: 4vw;
+        margin: 5px;
+    }
+    /* =================================================== */
     .the_news{
         display: block;
         width: 100%;
@@ -1278,10 +1314,12 @@ textarea{
         font-size: 13px;
         z-index: 1;
         line-height: 20px;
+        background-image: linear-gradient(180deg, #cbf9ff 29%, #f5fcffb6 90%,#ffffff00 100%);
     }
     .ingredients_items p:last-child{
         width: 60%;
         margin-left: auto;
+        
     }
     .ingredients_items p:first-child{
         width: 60%;
@@ -1427,6 +1465,13 @@ textarea{
     .form_paypage{
         width: 85%;
     }
+    td{
+        margin: 10px 0;
+    }
+    .num{
+        width: 7vw;
+    }
+    
     /* =======<<timer>>========== */
    /* =======<<CE-about_detail>>========== */ 
     
@@ -1435,7 +1480,7 @@ textarea{
         width: 93%;
     }
     .about_bck{
-        padding-top: 20vw;
+        padding-top: 12vw;
     }
     .about_pic_bck{
         width: 93%;

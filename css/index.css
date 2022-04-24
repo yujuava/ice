@@ -642,6 +642,7 @@ footer {
     #openhb{
         display: block;
         transition: ease 1s ;
+        font-size: 26px;
     }
     #openhb:active{
         transform: rotate(270deg);
@@ -649,6 +650,7 @@ footer {
     #closehb{
         display: none;
         transition: ease 1s;
+        font-size: 24px;
     }
     #closehb:active{
         display: none;
@@ -662,18 +664,24 @@ footer {
     .logo_icon {
         display: none;
     }
+    .logo_carousel{
+        border-radius: 0% 48% 48% 0% / 10% 64% 59% 10%;
+        overflow: hidden;
+    }
     .carousel_images{
         width: 100%;
         height: 63vh;
-        border-radius: 0% 48% 48% 0% / 10% 64% 59% 10%;
         position: relative;
+        overflow: hidden;
     }
     #a.occur,#b.occur,#c.occur{
         transition: ease  4s .4s;
+        border-radius: 0% 48% 48% 0% / 10% 64% 59% 10%;
     }
     #a,#b,#c{
         width: 100%;
         transition: ease  4s .4s;
+        border-radius: 0% 48% 48% 0% / 10% 64% 59% 10%;
     }
 
     /* ===========<<FP-news_index>>============ */
