@@ -7,7 +7,9 @@ body {
     position: relative;
     background-image: url(../pic/bck3.jpg);
 }
-
+/* body{
+    cursor: url(),pointer;
+} */
 h1 {
     display: none;
 }
@@ -570,6 +572,16 @@ footer {
 
 /* ==============<<FP-flat_plate>>================== */
 @media screen and (max-width: 991px) {
+    .top_shoppingcar{
+        bottom: 15vw;
+    }
+    .top_shoppingcar div{
+        height: 10vw;
+        width: 10vw;
+    }
+    .top_shoppingcar a{
+        font-size: 1em;
+    }
     .circle_1{
         display: none;
     }
