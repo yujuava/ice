@@ -120,7 +120,7 @@ section{
     text-decoration: none;
     display: inline-block;
     margin: auto;
-    font-size: 1.2em;
+    font-size: 16px;
     color: #37bfff;
 }
 #chooseItems{
@@ -1243,12 +1243,12 @@ textarea{
         height: 30vw;
     }
     #contentButton{
-        position: absolute;
-        bottom: -5.5vw;
+        /* position: absolute; */
+        bottom:-3.5vw;
     }
     #contentButton li{
-        width: 4vw;
-        height: 4vw;
+        width: 3vw;
+        height: 3vw;
         margin: 5px;
     }
     /* =================================================== */
@@ -1522,7 +1522,7 @@ textarea{
 
 }
 /* =============<<FP-desktop>>================ */
-@media screen and ( min-width: 668px){
+@media screen and ( min-width: 600px){
     .product_roller img:nth-child(n){
         width: 25%;
     }
@@ -1532,6 +1532,10 @@ textarea{
     .product_roller img:last-child{
         display: none;
     }
+    .top_shoppingcar div{
+        height: 6vw;
+        width: 6vw;
+    }
     /* ===============<<FP-type>>=================== */
     .contents{
         width: 85%;
@@ -1540,18 +1544,24 @@ textarea{
         bottom: -1vw;
         width: 18vw;
     }
+    .product_divide h3{
+        margin-top: 25px;
+    }
     .category{
         display: flex;
         flex-direction: row;
     }
     .item{
         margin: 20px;
+        width: 30vw;
     }
-
+    .item img{
+        width: 100%;
+    }
     /* ================<<FP-footer>>================= */
     .logo_footer img{
-        margin: auto;
-        width: 60%;
+        margin-right: auto;
+        width: 15%;
     }
     .footer_divide{
         width: 100%;
@@ -1569,6 +1579,16 @@ textarea{
         width: 65%;
         height: 8vw;
     }
+    /* ===================<<FP-news>>================== */
+    #contentButton{
+        height: 30px;
+        bottom: 2vw;
+    }
+    /* .about_pic_bck{
+        width: 93%;
+        margin-top: -5vw;
+        background-size: 100%;
+    } */
 }
    /* =============<<DE-desktop>>================ */
 @media screen and ( min-width: 992px){
@@ -1632,7 +1652,11 @@ textarea{
     .nav_li:hover.nav_li::after{
         opacity: 1;
     }
-
+    .top_shoppingcar div{
+        height: 3vw;
+        width: 3vw;
+    }
+    
     /* =============<<DE-type>>============== */
     .content label {
         display: none;
@@ -1723,6 +1747,12 @@ textarea{
         margin: 10px 3px 10px 0;
     }
 /* =====================<<DE-news>>====================== */
+    #contentButton{
+        height: 50px;
+        bottom: 0;
+        /* left: 0;
+        right: 0; */
+    }
     .the_news{  
         padding: 10vw 0;
     }
