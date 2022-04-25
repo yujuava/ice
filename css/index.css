@@ -268,7 +268,7 @@ a{
 }
 
 .product_outline h2 {
-    font-size: 40px;
+    font-size: 26px;
     margin: 30px 0 20px 0;
     font-weight: 500;
     position: relative;
@@ -276,7 +276,7 @@ a{
 
 .product_outline h2::after {
     position: absolute;
-    top: 120%;
+    top: 100%;
     content: '';
     height: 3px;
     width: 80%;
@@ -285,7 +285,7 @@ a{
 }
 
 .product_outline p {
-    font-size: 32px;
+    font-size: 24px;
     margin: 30px 0 40px 0;
     font-weight: 500;
 }
@@ -354,7 +354,7 @@ a{
 }
 
 .ingredients_detail h2 {
-    font-size: 32px;
+    font-size: 24px;
     margin-bottom: 20px;
     position: relative;
 }
@@ -393,7 +393,7 @@ a{
 }
 
 .purchase h2 {
-    font-size: 32px;
+    font-size: 24px;
     color: #39aee4;
     margin: 8% 0 5% 0;
     position: relative;
@@ -410,7 +410,7 @@ a{
 }
 
 .purchase_process .card p {
-    font-size: 28px;
+    font-size: 22px;
     color: #39aee4;
     text-align: center;
 }
@@ -433,7 +433,7 @@ a{
 }
 
 .purchase_process>i {
-    font-size: 30px;
+    font-size: 24px;
     color: #79c8ec;
 }
 
