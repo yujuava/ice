@@ -870,6 +870,10 @@ footer {
         height: 80%;
         border-radius: 10% 46% 46% 10% / 0% 100% 100% 0%;
     }
+    .top_shoppingcar div{
+        height: 6vw;
+        width: 6vw;
+    }
     .carousel_images {
         overflow: hidden;
         width: 100%;
@@ -934,7 +938,10 @@ footer {
     .content label {
         display: none;
     }
-
+    .top_shoppingcar div{
+        height: 3vw;
+        width: 3vw;
+    }
     /* =============<<DE-carousel>>============== */
     .carousel {
         height: 105vh;
