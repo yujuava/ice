@@ -525,6 +525,7 @@ footer {
     position: relative;
     overflow: hidden;
     margin:auto;
+    z-index: 1;
 }
 .news_content::before{
     position: absolute;
