@@ -724,7 +724,7 @@ footer {
     }
 
     .product_outline_img {
-        margin-top: 130px;
+        margin-top:32vw;
         width: 96%;
     }
 
@@ -734,7 +734,7 @@ footer {
 
     .product_detail_mark {
         position: absolute;
-        bottom: 0;
+        bottom: 5VW;
         margin-bottom: 20px;
     }
 
