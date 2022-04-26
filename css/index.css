@@ -599,7 +599,7 @@ footer {
     }
 
     .content {
-        width: 95%;
+        width: 95%!important;
         display: flex;
         justify-content: space-between;
         border-radius: 26px 0 0 26px;
@@ -619,7 +619,9 @@ footer {
         border-radius: 0 0 0 26px;
         box-shadow: 7px -8px 10px 3px inset #ffffffe5;
     }
-
+    #logoLong{
+        display: block!important;
+    }
     .content label {
         font-size: 20px;
         color: #7DACBA;

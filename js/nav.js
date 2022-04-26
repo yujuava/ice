@@ -1,17 +1,30 @@
 
     window.onscroll=function(){
         let bodys = document.getElementsByTagName("body");
-        // for(i=0;i<bodys.length;i++){
-        //     if(bodys[i].style.width>767){
-                // if(document.getElementsByTagName("body"))
-                if(window.innerWidth > 767){
-                if (window.scrollY >= "100") {
-                    document.getElementById("contentLong").style.width="90"+"vw";
-                    document.getElementById("logoLong").style.display="block";
-                }else{
-                    document.getElementById("contentLong").style.width="40"+"vw";
-                    document.getElementById("logoLong").style.display="none";
-                }
+            // if(window.innerWidth > 992){
+            if (window.scrollY >= "100"){
+                document.getElementById("contentLong").style.width="90"+"vw";
+                document.getElementById("logoLong").style.display="block";
+            }else if(window.innerWidth > 992){
+                document.getElementById("contentLong").style.width="40"+"vw";
+                document.getElementById("logoLong").style.display="none";
             }
         // }
     }
+
+    window.onresize=onscroll;
+ 
+    // window.addEventListener('resize', function(){
+    //     window.onscroll=function(){
+    //         let bodys = document.getElementsByTagName("body");
+    //             if(window.innerWidth > 992){
+    //             if (window.scrollY >= "100"){
+    //                 document.getElementById("contentLong").style.width="90"+"vw";
+    //                 document.getElementById("logoLong").style.display="block";
+    //             }else{
+    //                 document.getElementById("contentLong").style.width="40"+"vw";
+    //                 document.getElementById("logoLong").style.display="none";
+    //             }
+    //         }
+    //     }
+    //  });
