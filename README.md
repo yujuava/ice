@@ -5,7 +5,7 @@
   
   實際架站時間起迄:2022/04.07-04.26<br>
   
-  使用:HTML & CSS & JavaScript & AOS<br>
+  使用:HTML & CSS & JavaScript & AOS & RWD響應式網頁<br>
   
 2.網址:https://yujuava.github.io/ice/<br>
 
