@@ -5,7 +5,7 @@
   
   實際架站時間起迄:2022/04.07-04.26<br>
   
-  使用:HTML & CSS &JavaScript &AOS<br>
+  使用:HTML & CSS & JavaScript & AOS<br>
   
 2.網址:https://yujuava.github.io/ice/<br>
 
@@ -23,6 +23,6 @@
 
 (5)一般scroll出現文字:使用AOS套件<br>
 
-(6)聯絡我們:CSS滾動式差應用:使用CSS background屬性應用<br>
+(6)聯絡我們:CSS滾動視差應用:使用CSS background屬性應用<br>
 
 (7)背景圓圈動畫:使用CSS動畫位移，放大縮小，調整秒數順暢，使背景雖會移動但不會搶走主題<br>
